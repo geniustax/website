@@ -1804,16 +1804,39 @@
 
 @media (max-width: 575px) {
   .u-section-8 .u-sheet-1 {
-    min-height: 363px;
+    min-height: auto;
+    padding: 20px 0;
   }
 
   .u-section-8 .u-layout-cell-1 {
-    min-height: 793px;
+    min-height: auto;
+    height: auto;
   }
 
   .u-section-8 .u-repeater-1 {
-    grid-auto-columns: 100%;
-    grid-template-columns: 100%;
+    grid-auto-columns: 50%;
+    grid-template-columns: repeat(2, 50%);
+    min-height: auto;
+  }
+
+  .u-section-8 .u-container-layout-11 {
+    padding: 0 10px 20px;
+  }
+
+  .u-section-8 .u-text-1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .u-section-8 .u-text-2 {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+
+  .u-section-8 .u-btn-1 {
+    margin: 0 auto;
+    padding: 12px 24px;
+    font-size: 0.875rem;
   }
 }
 /* ========================================
