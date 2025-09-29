@@ -1,0 +1,401 @@
+ /* WhatsApp Floating Button Styles */
+.whatsapp-float {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 15px 20px;
+  gap: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.whatsapp-float:hover {
+  background-color: #128C7E;
+  color: #FFF;
+  transform: scale(1.05);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.whatsapp-float i {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.whatsapp-text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/* Mobile optimization */
+@media (max-width: 575px) {
+  .whatsapp-float {
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 16px;
+    gap: 10px;
+  }
+
+  .whatsapp-float i {
+    font-size: 20px;
+  }
+
+  .whatsapp-text {
+    font-size: 12px;
+  }
+}
+
+.u-section-1 {
+  background-image: none;
+  min-height: 822px;
+}
+
+.u-section-1 .u-layout-wrap-1 {
+  width: 1140px;
+  margin: 86px auto 60px;
+}
+
+.u-section-1 .u-layout-cell-1 {
+  min-height: 801px;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 41px 50px;
+}
+
+.u-section-1 .u-text-1 {
+  margin: 19px 0 0;
+}
+
+.u-section-1 .u-text-2 {
+  margin: 20px 0 0;
+}
+
+.u-section-1 .u-form-1 {
+  height: 299px;
+  margin: 30px 0 0;
+}
+
+.u-section-1 .u-form-group-3 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-form-group-5 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-btn-1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-image: none;
+  width: 100%;
+  border-style: solid;
+  --hover-color-var: #ffc900;
+  padding: 19px 0 20px;
+}
+
+.u-section-1 .u-layout-cell-2 {
+  min-height: 593px;
+}
+
+.u-section-1 .u-container-layout-2 {
+  padding: 30px;
+}
+
+.u-section-1 .u-list-1 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.u-section-1 .u-repeater-1 {
+  grid-template-columns: repeat(1, 100%);
+  min-height: 533px;
+  --gap: 2px;
+  grid-auto-columns: 100%;
+}
+
+.u-section-1 .u-container-layout-3 {
+  padding: 30px;
+}
+
+.u-section-1 .u-icon-1 {
+  width: 64px;
+  background-image: none;
+  height: 64px;
+  margin: 0 auto 0 0;
+  padding: 6px;
+}
+
+.u-section-1 .u-text-3 {
+  font-weight: 700;
+  margin: -64px 0 0 84px;
+}
+
+.u-section-1 .u-text-4 {
+  font-style: italic;
+  margin: 10px 0 0 84px;
+}
+
+.u-section-1 .u-container-layout-4 {
+  padding: 30px;
+}
+
+.u-section-1 .u-icon-2 {
+  width: 64px;
+  background-image: none;
+  height: 64px;
+  margin: 0 auto 0 0;
+  padding: 6px;
+}
+
+.u-section-1 .u-text-5 {
+  font-weight: 700;
+  margin: -64px 0 0 84px;
+}
+
+.u-section-1 .u-text-6 {
+  font-style: italic;
+  margin: 10px 0 0 84px;
+}
+
+.u-section-1 .u-container-layout-5 {
+  padding: 30px;
+}
+
+.u-section-1 .u-icon-3 {
+  width: 64px;
+  background-image: none;
+  height: 64px;
+  margin: 0 auto 0 0;
+  padding: 6px;
+}
+
+.u-section-1 .u-text-7 {
+  font-weight: 700;
+  margin: -64px 0 0 84px;
+}
+
+.u-section-1 .u-text-8 {
+  font-style: italic;
+  margin: 10px 0 0 84px;
+}
+
+@media (max-width: 1199px) {
+   .u-section-1 {
+    min-height: 783px;
+  }
+
+  .u-section-1 .u-layout-wrap-1 {
+    width: 940px;
+  }
+
+  .u-section-1 .u-layout-cell-1 {
+    min-height: 660px;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-right: 32px;
+    padding-left: 30px;
+  }
+
+  .u-section-1 .u-form-1 {
+    margin-right: initial;
+    margin-left: initial;
+  }
+
+  .u-section-1 .u-layout-cell-2 {
+    min-height: 489px;
+  }
+
+  .u-section-1 .u-repeater-1 {
+    grid-template-columns: 100%;
+    grid-gap: 20px;
+  }
+
+  .u-section-1 .u-container-layout-3 {
+    padding: 20px 0;
+  }
+
+  .u-section-1 .u-text-3 {
+    width: auto;
+    margin-left: 94px;
+  }
+
+  .u-section-1 .u-text-4 {
+    width: auto;
+    margin-top: 22px;
+    margin-left: 94px;
+  }
+
+  .u-section-1 .u-container-layout-4 {
+    padding: 20px 0;
+  }
+
+  .u-section-1 .u-text-5 {
+    width: auto;
+    margin-left: 94px;
+  }
+
+  .u-section-1 .u-text-6 {
+    width: auto;
+    margin-top: 22px;
+    margin-left: 94px;
+  }
+
+  .u-section-1 .u-container-layout-5 {
+    padding: 20px 0;
+  }
+
+  .u-section-1 .u-text-7 {
+    width: auto;
+    margin-left: 94px;
+  }
+
+  .u-section-1 .u-text-8 {
+    width: auto;
+    margin-top: 22px;
+    margin-left: 94px;
+  }
+}
+
+@media (max-width: 991px) {
+   .u-section-1 {
+    min-height: 394px;
+  }
+
+  .u-section-1 .u-layout-wrap-1 {
+    width: 720px;
+  }
+
+  .u-section-1 .u-layout-cell-1 {
+    min-height: 100px;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+  }
+
+  .u-section-1 .u-layout-cell-2 {
+    min-height: 100px;
+  }
+
+  .u-section-1 .u-repeater-1 {
+    grid-auto-columns: calc(100% - 0px);
+  }
+}
+
+@media (max-width: 767px) {
+   .u-section-1 {
+    min-height: 1370px;
+  }
+
+  .u-section-1 .u-layout-wrap-1 {
+    width: 540px;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-top: 50px;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-left: 110px;
+  }
+
+  .u-section-1 .u-text-4 {
+    margin-top: 30px;
+    margin-left: 110px;
+  }
+
+  .u-section-1 .u-text-5 {
+    margin-left: 110px;
+  }
+
+  .u-section-1 .u-text-6 {
+    margin-top: 30px;
+    margin-left: 110px;
+  }
+
+  .u-section-1 .u-text-7 {
+    margin-left: 110px;
+  }
+
+  .u-section-1 .u-text-8 {
+    margin-top: 30px;
+    margin-left: 110px;
+  }
+}
+
+@media (max-width: 575px) {
+   .u-section-1 {
+    min-height: 837px;
+  }
+
+  .u-section-1 .u-layout-wrap-1 {
+    width: 340px;
+    margin-top: 58px;
+    margin-bottom: 58px;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .u-section-1 .u-container-layout-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-1 .u-container-layout-3 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-text-4 {
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-container-layout-4 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .u-section-1 .u-text-5 {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-text-6 {
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-container-layout-5 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .u-section-1 .u-text-7 {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-text-8 {
+    margin-left: 0;
+  }
+}
