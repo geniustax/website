@@ -94,6 +94,9 @@
 .u-section-1 .u-btn-1 {
   background-image: none;
   text-transform: uppercase;
+  margin: 20px auto 0;
+  display: block;
+  text-align: center;
 }
 
 @media (max-width: 1199px) {
