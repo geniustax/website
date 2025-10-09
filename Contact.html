@@ -26,8 +26,7 @@
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
   <meta name="referrer" content="origin"><meta data-intl-tel-input-cdn-path="intlTelInput/">
-  <!-- EmailJS -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
 </head>
   <body data-path-to-root="./" data-include-products="false" class="u-body u-clearfix u-stick-footer u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-header" id="header" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-sm u-sheet-1">
         <a href="#" class="u-image u-logo u-image-1" data-image-width="1024" data-image-height="1024">
@@ -44,6 +43,7 @@
           <div class="u-custom-menu u-nav-container">
             <ul class="u-nav u-unstyled u-nav-1" role="menubar"><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="index.html" style="padding: 10px 20px;">Главная</a>
 </li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Services.html" style="padding: 10px 20px;">Услуги</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="About-us.html" style="padding: 10px 20px;">Обо мне</a>
 </li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Contact.html" style="padding: 10px 20px;">Контакты</a>
 </li></ul>
           </div>
@@ -53,6 +53,7 @@
                 <div class="u-menu-close" tabindex="-1" aria-label="Close menu"></div>
                 <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2" role="menubar"><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="index.html">Главная</a>
 </li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="Services.html">Услуги</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="About-us.html">Обо мне</a>
 </li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="Contact.html">Контакты</a>
 </li></ul>
               </div>
@@ -94,7 +95,11 @@
                 <h3 class="u-align-center u-text u-text-1"> Заинтересованы в наших услугах?</h3>
                 <h4 class="u-align-center u-text u-text-2">Мы ответим в течение 24 часов! </h4>
                 <div class="u-expanded-width u-form u-form-1">
-                  <form id="contact-form" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 0;" name="form">
+                  <form id="contact-form" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 0;" name="form" action="/api/contact" method="POST" autocomplete="on">
+                    <div style="position:absolute;left:-5000px;opacity:0;pointer-events:none" aria-hidden="true">
+                      <label for="company-field">Company</label>
+                      <input type="text" id="company-field" name="company" tabindex="-1" autocomplete="off">
+                    </div>
                     <div class="u-form-group u-form-name">
                       <label class="u-label">Имя</label>
                       <input type="text" placeholder="Как к вам обращаться? " id="name-daf4" name="name" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required="">
@@ -251,83 +256,68 @@
   </a>
 
   <script>
-    // EmailJS Configuration
-    // ВАЖНО: Замените на ваши настройки после регистрации на emailjs.com
-    const EMAIL_CONFIG = {
-      publicKey: 'YOUR_PUBLIC_KEY',     // Получите на emailjs.com
-      serviceID: 'YOUR_SERVICE_ID',     // ID Email Service
-      templateID: 'YOUR_TEMPLATE_ID'    // ID Email Template
-    };
-
-    // Initialize EmailJS
-    emailjs.init(EMAIL_CONFIG.publicKey);
-
     document.addEventListener('DOMContentLoaded', function() {
-      // Auto-fill service selection based on URL parameter
       const urlParams = new URLSearchParams(window.location.search);
       const serviceParam = urlParams.get('service');
       const serviceSelect = document.getElementById('service-selection');
-      
       if (serviceParam && serviceSelect) {
         const option = serviceSelect.querySelector(`option[value="${serviceParam}"]`);
-        if (option) {
-          serviceSelect.value = serviceParam;
-        }
+        if (option) serviceSelect.value = serviceParam;
       }
 
-      // Handle form submission
       const form = document.getElementById('contact-form');
       const successMsg = document.getElementById('form-success');
       const errorMsg = document.getElementById('form-error');
       const sendingMsg = document.getElementById('form-sending');
-      
-      form.addEventListener('submit', function(e) {
+      const submitBtn = form.querySelector('button[type="submit"]');
+
+      form.addEventListener('submit', async function(e) {
         e.preventDefault();
-        
-        // Show sending message
+
         successMsg.style.display = 'none';
         errorMsg.style.display = 'none';
         sendingMsg.style.display = 'block';
-        
-        // Get service name for readable email
+        if (submitBtn) submitBtn.disabled = true;
+
         const serviceValue = form.service.value;
         const serviceNames = {
-          'basic': 'Базовый пакет',
-          'standard': 'Стандартный пакет', 
-          'premium': 'Премиум пакет',
-          'individual': 'Индивидуальные услуги'
+          basic: 'Базовый пакет',
+          standard: 'Стандартный пакет',
+          premium: 'Премиум пакет',
+          individual: 'Индивидуальные услуги'
         };
-        
-        // Prepare template parameters
-        const templateParams = {
-          from_name: 'GeniusTax Website',
-          to_email: 'info@geniustax.nl',
+
+        const payload = {
           name: form.name.value,
           email: form.email.value,
           phone: form.phone.value,
           service: serviceValue ? serviceNames[serviceValue] : 'Не выбрано',
           message: form.message.value,
-          reply_to: form.email.value
+          company: form.company ? form.company.value : ''
         };
-        
-        // Send email via EmailJS
-        emailjs.send(EMAIL_CONFIG.serviceID, EMAIL_CONFIG.templateID, templateParams)
-          .then(function(response) {
-            console.log('Email sent successfully:', response);
-            sendingMsg.style.display = 'none';
+
+        try {
+          const resp = await fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+          });
+
+          const data = await resp.json().catch(() => ({}));
+          sendingMsg.style.display = 'none';
+          if (resp.ok && data.ok) {
             successMsg.style.display = 'block';
             form.reset();
-            
-            // Auto-fill service again after reset if came from Services page
-            if (serviceParam && serviceSelect) {
-              serviceSelect.value = serviceParam;
-            }
-          })
-          .catch(function(error) {
-            console.error('Email sending failed:', error);
-            sendingMsg.style.display = 'none';
+            if (serviceParam && serviceSelect) serviceSelect.value = serviceParam;
+          } else {
             errorMsg.style.display = 'block';
-          });
+          }
+        } catch (err) {
+          sendingMsg.style.display = 'none';
+          errorMsg.style.display = 'block';
+        } finally {
+          if (submitBtn) submitBtn.disabled = false;
+        }
       });
     });
   </script>
