@@ -37,7 +37,7 @@ export default async function handler(req, res) {
     return res.status(422).json({ ok: false, error: 'Validation failed' });
   }
 
-  const to = 'info@geniustax.nl';
+  const to = 'anna.chemic@gmail.com';
   const from = 'GeniusTax Website <noreply@geniustax.nl>';
   const apiKey = process.env.RESEND_API_KEY;
 
