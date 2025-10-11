@@ -37,25 +37,38 @@ export default async function handler(req, res) {
     return res.status(422).json({ ok: false, error: 'Validation failed' });
   }
 
-  const to = process.env.CONTACT_TO || 'info@geniustax.nl';
-  const from = process.env.RESEND_FROM || 'onboarding@resend.dev';
+  const to = 'info@geniustax.nl';
+  const from = 'GeniusTax Website <noreply@geniustax.nl>';
   const apiKey = process.env.RESEND_API_KEY;
 
   if (!apiKey) {
     return res.status(500).json({ ok: false, error: 'Email provider not configured' });
   }
 
-  const subject = `Новая заявка с сайта — ${name}`;
+  const subject = `Новое обращение от ${name} - GeniusTax.nl`;
   const svc = service && service !== '' ? service : 'Не выбрано';
 
   const html = `
-    <div style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.6;color:#111">
-      <h2 style="margin:0 0 12px">Новая заявка с формы контакта</h2>
-      <p><strong>Имя:</strong> ${escapeHtml(name)}</p>
-      <p><strong>Email:</strong> ${escapeHtml(email)}</p>
-      <p><strong>Телефон:</strong> ${escapeHtml(phone || '')}</p>
-      <p><strong>Услуги:</strong> ${escapeHtml(svc)}</p>
-      <p><strong>Сообщение:</strong><br>${escapeHtml(message).replace(/\n/g, '<br>')}</p>
+    <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+      <h2 style="color: #0097a7; margin: 0 0 20px;">Новое сообщение с сайта GeniusTax</h2>
+      
+      <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
+        <h3 style="margin-top: 0; color: #333; font-size: 16px;">Контактные данные:</h3>
+        <p style="margin: 8px 0;"><strong>Имя:</strong> ${escapeHtml(name)}</p>
+        <p style="margin: 8px 0;"><strong>Email:</strong> <a href="mailto:${escapeHtml(email)}" style="color: #0097a7;">${escapeHtml(email)}</a></p>
+        ${phone ? `<p style="margin: 8px 0;"><strong>Телефон:</strong> ${escapeHtml(phone)}</p>` : ''}
+        <p style="margin: 8px 0;"><strong>Интересующие услуги:</strong> ${escapeHtml(svc)}</p>
+      </div>
+      
+      <div style="background-color: #fff; padding: 20px; border-left: 4px solid #0097a7; margin: 20px 0; border-radius: 0 8px 8px 0;">
+        <h3 style="margin-top: 0; color: #333; font-size: 16px;">Сообщение:</h3>
+        <p style="line-height: 1.6; color: #555; margin: 0;">${escapeHtml(message).replace(/\n/g, '<br>')}</p>
+      </div>
+      
+      <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; font-size: 12px; color: #888;">
+        <p style="margin: 4px 0;">Отправлено через контактную форму на сайте <strong>GeniusTax.nl</strong></p>
+        <p style="margin: 4px 0;">Время: ${new Date().toLocaleString('ru-RU', { timeZone: 'Europe/Amsterdam' })}</p>
+      </div>
     </div>
   `;
 
