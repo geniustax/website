@@ -399,3 +399,85 @@
     margin-left: 0;
   }
 }
+
+/* Mobile Header and Footer Fixes for Android */
+@media (max-width: 575px) {
+  /* Fix header layout */
+  .u-header .u-sheet-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: auto;
+  }
+  
+  /* Ensure hamburger menu is not cut off */
+  .u-menu .menu-collapse {
+    margin-right: 0;
+    padding-right: 10px;
+  }
+  
+  /* Fix hamburger button positioning */
+  .u-hamburger-link-1 {
+    padding-right: 8px;
+  }
+  
+  /* Make sure header content fits */
+  .u-header .u-nav-container,
+  .u-header .u-nav-container-collapse {
+    margin-right: 0;
+  }
+  
+  /* Language selector spacing and positioning */
+  .u-language-1 {
+    margin-right: 0;
+    margin-top: -5px;
+    margin-left: -10px;
+  }
+  
+  /* Fix footer layout */
+  .u-footer .u-sheet-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  /* Fix address text wrapping */
+  .u-footer .u-block-content {
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  
+  /* Make footer buttons smaller on mobile */
+  .u-footer .u-btn {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+  
+  /* Footer text spacing */
+  .u-footer .u-text-5 {
+    font-size: 12px;
+    margin: 15px 0;
+  }
+}
+
+/* Very small screens (320px and below) */
+@media (max-width: 320px) {
+  .u-header .u-sheet-1 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  .u-menu .menu-collapse {
+    padding-right: 5px;
+  }
+  
+  .u-footer .u-sheet-1 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  .u-footer .u-block-content {
+    font-size: 12px;
+  }
+}
