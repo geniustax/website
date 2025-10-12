@@ -33,12 +33,30 @@ export default async function handler(req, res) {
   }
 
   const isEmailValid = (val) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(val || '').toLowerCase());
-  if (!name || !email || !message || !isEmailValid(email)) {
-    return res.status(422).json({ ok: false, error: 'Validation failed' });
+  
+  // Detailed validation with specific error messages
+  if (!name || name.trim() === '') {
+    return res.status(422).json({ ok: false, error: 'Имя обязательно для заполнения' });
+  }
+  
+  if (!email || email.trim() === '') {
+    return res.status(422).json({ ok: false, error: 'Email обязателен для заполнения' });
+  }
+  
+  if (!isEmailValid(email)) {
+    return res.status(422).json({ ok: false, error: 'Некорректный формат email адреса' });
+  }
+  
+  if (!phone || phone.trim() === '') {
+    return res.status(422).json({ ok: false, error: 'Телефон обязателен для заполнения' });
+  }
+  
+  if (!message || message.trim() === '') {
+    return res.status(422).json({ ok: false, error: 'Сообщение обязательно для заполнения' });
   }
 
   const to = 'anna.chemic@gmail.com';
-  const from = 'GeniusTax Website <noreply@geniustax.nl>';
+  const from = 'GeniusTax Website <onboarding@resend.dev>';
   const apiKey = process.env.RESEND_API_KEY;
 
   if (!apiKey) {
