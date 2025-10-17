@@ -279,3 +279,32 @@
     right: 0 !important;
   }
 }
+/* Force header layout to match index and add safe padding */
+.u-header .u-sheet.u-sheet-1 {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding-left: max(10px, env(safe-area-inset-left)) !important;
+  padding-right: max(10px, env(safe-area-inset-right)) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+
+.u-header .u-logo {
+  margin-right: auto !important;
+  margin-left: 6px !important;
+}
+
+.u-header .u-menu-1 {
+  position: static !important;
+  margin: 0 10px 0 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0 !important;
+}
+
+.u-header .u-language-1 {
+  position: static !important;
+  margin: 0 4px 0 -35px !important;
+}

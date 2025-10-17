@@ -2179,7 +2179,7 @@ html, body {
     padding: 0 !important;
   }
   .u-header .u-logo { margin-right: auto !important; margin-left: 6px !important; }
-  .u-header .u-menu-1 { margin: 0 6px 0 0 !important; gap: 0 !important; }
+  .u-header .u-menu-1 { margin: 0 10px 0 0 !important; gap: 0 !important; }
 }
 
 /* Desktop - Card Layout */
@@ -2434,7 +2434,8 @@ html, body {
   width: 100% !important;
   max-width: 100% !important;
   margin: 0 !important;
-  padding: 0 !important;
+  padding-left: max(10px, env(safe-area-inset-left)) !important;
+  padding-right: max(10px, env(safe-area-inset-right)) !important;
   display: flex !important;
   align-items: center !important;
   justify-content: flex-start !important;
@@ -2447,7 +2448,7 @@ html, body {
 
 .u-header .u-menu-1 {
   position: static !important;
-  margin: 0 6px 0 0 !important;
+  margin: 0 10px 0 0 !important;
   display: flex !important;
   align-items: center !important;
   gap: 0 !important;
