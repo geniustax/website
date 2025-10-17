@@ -2052,9 +2052,19 @@
 
 .u-header .u-language-1 {
   position: static !important;
-  margin: 0 4px 0 -35px !important;
+  margin: 0 8px 0 -35px !important;
   order: 1 !important;
 }
+
+/* Enlarge active language selector to match other pages */
+.u-language-1 > .u-language-active {
+  padding: 6px 10px !important; /* larger tap target */
+}
+
+.u-language-1 .u-caret-svg { width: 18px !important; height: 18px !important; }
+.u-language-1 .u-icon { height: 26px !important; width: 26px !important; }
+/* Nudge caret a bit higher to match other pages */
+.u-language-1 .u-caret-svg { position: relative; top: -2px; display: inline-block; }
 
 .u-language-1 .u-language-dropdown {
   left: auto !important;
