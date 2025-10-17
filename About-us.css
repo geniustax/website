@@ -2069,3 +2069,30 @@
   justify-content: center !important;
   align-items: center !important;
 }
+/* Footer links on one line; attribution below */
+.u-footer .u-sheet-1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.u-footer .u-btn-3,
+.u-footer .u-btn-4 {
+  order: 1;
+  margin: 0 12px !important;
+}
+
+.u-footer .u-text-5 { /* © attribution */
+  order: 2;
+  width: 100%;
+  text-align: center;
+  margin: 6px 0 0 !important;
+}
+
+/* Tighter footer spacing */
+.u-footer .u-container-layout { padding-top: 6px !important; padding-bottom: 6px !important; }
+.u-footer h5.u-block-header { margin: 0 0 4px !important; }
+.u-footer .u-line-1 { margin: 6px 0 4px !important; }
+.u-footer .u-btn-3, .u-footer .u-btn-4 { margin-top: 2px !important; }
