@@ -531,7 +531,14 @@ a:hover {
   }
 }
 
+/* Mobile/tablet header alignment similar to index.html */
 @media (max-width: 767px) {
+  .header-container { justify-content: flex-start; padding: 12px 10px; gap: 0; }
+  .logo { order: 1; margin-left: 6px; margin-right: auto; }
+  .language-selector { order: 2; margin: 0 4px 0 0; }
+  .nav { order: 3; }
+  .nav-toggle { display: flex; padding: 6px; }
+  .language-dropdown { right: 0; left: auto; }
   .hero {
     min-height: 298px;
   }

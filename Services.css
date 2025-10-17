@@ -2071,6 +2071,117 @@ html, body {
   }
 }
 
+/* Header alignment for <= 767px (match index/about) */
+@media (max-width: 767px) {
+  .u-header .u-sheet-1 {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .u-header .u-logo {
+    order: 1 !important;
+    margin-right: auto !important;
+    margin-left: 6px !important;
+  }
+
+  .u-header .u-menu-1 {
+    order: 2 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0 !important;
+    margin: 0 6px 0 0 !important;
+    flex: 0 0 auto !important;
+  }
+
+  .u-language-1 {
+    order: 1 !important;
+    margin: 0 4px 0 -35px !important; /* match index: pull language left to sit tight to hamburger */
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    flex: 0 0 auto !important;
+  }
+
+  .u-menu .menu-collapse {
+    padding: 6px !important;
+    min-width: 44px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+}
+
+/* Header alignment for <= 939px (Nicepage MD breakpoint) */
+@media (max-width: 939px) {
+  .u-header .u-sheet-1 {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .u-header .u-logo {
+    order: 1 !important;
+    margin-right: auto !important;
+    margin-left: 6px !important;
+  }
+
+  .u-header .u-menu-1 {
+    order: 2 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0 !important;
+    margin: 0 6px 0 0 !important; /* avoid centering from margin auto */
+  }
+
+  .u-header .u-language-1,
+  .u-language-1 {
+    order: 1 !important;
+    margin: 0 4px 0 -35px !important; /* pull language next to hamburger */
+    padding: 0 !important;
+    position: static !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .u-menu .menu-collapse {
+    order: 2 !important;
+    margin: 0 !important;
+    padding: 6px !important;
+    min-width: 44px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .u-language-1 .u-language-dropdown {
+    left: auto !important;
+    right: 0 !important;
+  }
+}
+
+/* Ensure full-width header layout at <=1199px too */
+@media (max-width: 1199px) {
+  .u-header .u-sheet-1 {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .u-header .u-logo { margin-right: auto !important; margin-left: 6px !important; }
+  .u-header .u-menu-1 { margin: 0 6px 0 0 !important; gap: 0 !important; }
+}
+
 /* Desktop - Card Layout */
 @media (min-width: 768px) {
   .u-packages-accordion {
@@ -2317,4 +2428,32 @@ html, body {
     left: auto !important;
     right: 0 !important;
   }
+}
+/* Force header to full-width and align right group across all widths */
+.u-header .u-sheet.u-sheet-1 {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+
+.u-header .u-logo {
+  margin-right: auto !important;
+  margin-left: 6px !important;
+}
+
+.u-header .u-menu-1 {
+  position: static !important;
+  margin: 0 6px 0 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0 !important;
+}
+
+.u-header .u-language-1 {
+  position: static !important;
+  margin: 0 4px 0 -35px !important;
 }
