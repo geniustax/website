@@ -2175,8 +2175,17 @@ html, body {
     min-height: 124px !important;
     display: flex !important;
     align-items: center !important;
-    justify-content: space-between !important;
+    justify-content: flex-start !important;
     padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important; /* stretch header container to viewport */
+  }
+
+  /* Logo on the left, push others right */
+  .u-header .u-logo {
+    order: 1 !important;
+    margin-right: auto !important;
+    margin-left: 6px !important;
   }
 
   /* Reset conflicting nicepage styles */
@@ -2186,8 +2195,9 @@ html, body {
     order: 2 !important;
     display: flex !important;
     align-items: center !important;
-    gap: 5px !important;
-    margin-right: 10px !important;
+    gap: 0 !important;
+    margin: 0 6px 0 0 !important; /* match index header spacing */
+    flex: 0 0 auto !important;
   }
 
   .u-header .u-image-1 {
@@ -2201,20 +2211,34 @@ html, body {
   .u-header .u-language-1,
   .u-language-1 {
     order: 1 !important;
-    margin: 0 !important;
+    margin: 0 6px 0 0 !important; /* align next to hamburger on the right */
     padding: 0 !important;
     position: static !important;
+    display: flex !important;
+    align-items: center !important;
+    flex: 0 0 auto !important;
+  }
+  .u-language-1 > a.u-language-active {
+    padding-left: 2px !important;
+    padding-right: 2px !important;
   }
 
   /* Hamburger button */
   .u-menu .menu-collapse {
     order: 2 !important;
     margin: 0 !important;
-    padding: 12px !important;
+    padding: 6px !important; /* match index */
     min-width: 44px !important;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
+  }
+
+  /* Align language dropdown to the right edge of selector */
+  .u-language-1 { position: relative !important; }
+  .u-language-1 .u-language-dropdown {
+    left: auto !important;
+    right: 0 !important;
   }
   
   /* Fix footer layout */
