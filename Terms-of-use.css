@@ -132,11 +132,52 @@
     margin-right: 0;
   }
   
-  /* Language selector spacing and positioning */
+  /* Mobile header layout: align language left of hamburger */
+  .u-header .u-sheet-1 {
+    position: relative !important;
+    min-height: 124px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0 !important;
+  }
+
+  /* Reset conflicting nicepage styles */
+  .u-header .u-menu-1 {
+    margin-top: 0 !important;
+    position: static !important;
+    order: 2 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 5px !important;
+    margin-right: 10px !important;
+  }
+
+  .u-header .u-image-1 {
+    margin: 0 !important;
+    position: static !important;
+    width: 121px !important;
+    height: 121px !important;
+  }
+
+  /* Language selector */
+  .u-header .u-language-1,
   .u-language-1 {
-    margin-right: 0;
-    margin-top: -5px;
-    margin-left: -35px;
+    order: 1 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: static !important;
+  }
+
+  /* Hamburger button */
+  .u-menu .menu-collapse {
+    order: 2 !important;
+    margin: 0 !important;
+    padding: 12px !important;
+    min-width: 44px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
   }
   
   /* Fix footer layout */

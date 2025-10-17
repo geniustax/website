@@ -2365,7 +2365,7 @@
     min-height: 124px !important;
     display: flex !important;
     align-items: center !important;
-    justify-content: space-between !important;
+    justify-content: flex-start !important;
     padding: 0 !important;
   }
   
@@ -2401,26 +2401,43 @@
     order: 2 !important;
     display: flex !important;
     align-items: center !important;
-    gap: 5px !important;
-    margin-right: 10px !important;
+    gap: 0 !important;
+    margin: 0 6px 0 0 !important; /* reset left:auto from nicepage and keep small right gap */
+    flex: 0 0 auto !important;
   }
   
   /* Language selector */
   .u-language-1 {
     order: 1 !important;
-    margin: 0 !important;
+    /* Match About-us mobile: nudge left to reduce gap */
+    margin: 0 4px 0 -35px !important;
     padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    flex: 0 0 auto !important;
+  }
+  /* Reduce extra padding around active language to sit closer */
+  .u-language-1 > a.u-language-active {
+    padding-left: 2px !important;
+    padding-right: 2px !important;
   }
   
   /* Hamburger menu */
   .u-menu .menu-collapse {
     order: 2 !important;
     margin: 0 !important;
-    padding: 12px !important;
+    padding: 6px !important;
     min-width: 44px !important;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
+  }
+
+  /* Align language dropdown to the right edge of selector */
+  .u-language-1 { position: relative !important; }
+  .u-language-1 .u-language-dropdown {
+    left: auto !important;
+    right: 0 !important;
   }
   
   /* Language dropdown - single column layout */
