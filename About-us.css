@@ -1943,7 +1943,7 @@
   .u-language-1 {
     margin-right: 0;
     margin-top: -5px;
-    margin-left: -10px;
+    margin-left: -35px;
   }
   
   /* Fix footer layout */
@@ -1992,5 +1992,34 @@
   
   .u-footer .u-block-content {
     font-size: 12px;
+  }
+  
+  /* Language dropdown - single column layout */
+  .u-language-dropdown {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+    min-width: 60px !important;
+    padding: 8px !important;
+  }
+  
+  /* Individual language items in dropdown */
+  .u-language-dropdown .u-language-url {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    padding: 4px !important;
+  }
+  
+  /* Center flag icons in dropdown */
+  .u-language-dropdown .u-icon {
+    display: block !important;
+    margin: 0 auto !important;
+  }
+  
+  /* Align dropdown to right edge */
+  .u-language-1 .u-language-dropdown {
+    left: auto !important;
+    right: 0 !important;
   }
 }

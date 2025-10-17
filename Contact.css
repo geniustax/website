@@ -409,15 +409,22 @@
     min-height: auto;
   }
   
-  /* Ensure hamburger menu is not cut off */
+  /* Ensure hamburger menu is not cut off and make it wider */
   .u-menu .menu-collapse {
     margin-right: 0;
-    padding-right: 10px;
+    padding-right: 15px;
+    padding-left: 10px;
+    min-width: 50px;
   }
   
-  /* Fix hamburger button positioning */
+  /* Fix hamburger button positioning and make it wider */
   .u-hamburger-link-1 {
-    padding-right: 8px;
+    padding-right: 12px;
+    padding-left: 12px;
+    min-width: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   /* Make sure header content fits */
@@ -430,7 +437,7 @@
   .u-language-1 {
     margin-right: 0;
     margin-top: -5px;
-    margin-left: -10px;
+    margin-left: -35px;
   }
   
   /* Fix footer layout */
@@ -479,5 +486,34 @@
   
   .u-footer .u-block-content {
     font-size: 12px;
+  }
+  
+  /* Language dropdown - single column layout */
+  .u-language-dropdown {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+    min-width: 60px !important;
+    padding: 8px !important;
+  }
+  
+  /* Individual language items in dropdown */
+  .u-language-dropdown .u-language-url {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    padding: 4px !important;
+  }
+  
+  /* Center flag icons in dropdown */
+  .u-language-dropdown .u-icon {
+    display: block !important;
+    margin: 0 auto !important;
+  }
+  
+  /* Align dropdown to right edge */
+  .u-language-1 .u-language-dropdown {
+    left: auto !important;
+    right: 0 !important;
   }
 }

@@ -1406,6 +1406,37 @@ html, body {
   padding: 20px 30px;
 }
 
+/* Ensure FAQ icons 7–9 are sized like 1–6 */
+.u-section-7 .u-icon-7,
+.u-section-7 .u-icon-8,
+.u-section-7 .u-icon-9 {
+  height: 20px;
+  width: 20px;
+  background-image: none;
+}
+
+/* Ensure FAQ links 7–9 have same width as 1–6 */
+.u-section-7 .u-accordion-link-7,
+.u-section-7 .u-accordion-link-8,
+.u-section-7 .u-accordion-link-9 {
+  font-weight: 700;
+  padding: 20px 30px;
+}
+
+/* Ensure FAQ panes 7–9 have same height as 1–6 */
+.u-section-7 .u-accordion-pane-7,
+.u-section-7 .u-accordion-pane-8,
+.u-section-7 .u-accordion-pane-9 {
+  min-height: 150px;
+}
+
+/* Ensure FAQ container layouts 7–9 have same padding as 1–6 */
+.u-section-7 .u-container-layout-7,
+.u-section-7 .u-container-layout-8,
+.u-section-7 .u-container-layout-9 {
+  padding: 20px 30px;
+}
+
 @media (max-width: 1199px) {
   .u-section-7 .u-accordion-1 {
     margin-right: initial;
@@ -1430,6 +1461,31 @@ html, body {
   }
 
   .u-section-7 .u-container-layout-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-7 .u-container-layout-5 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-7 .u-container-layout-6 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-7 .u-container-layout-7 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-7 .u-container-layout-8 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-7 .u-container-layout-9 {
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -2089,15 +2145,22 @@ html, body {
     min-height: auto;
   }
   
-  /* Ensure hamburger menu is not cut off */
+  /* Ensure hamburger menu is not cut off and make it wider */
   .u-menu .menu-collapse {
     margin-right: 0;
-    padding-right: 10px;
+    padding-right: 15px;
+    padding-left: 10px;
+    min-width: 50px;
   }
   
-  /* Fix hamburger button positioning */
+  /* Fix hamburger button positioning and make it wider */
   .u-hamburger-link-1 {
-    padding-right: 8px;
+    padding-right: 12px;
+    padding-left: 12px;
+    min-width: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   /* Make sure header content fits */
@@ -2110,7 +2173,7 @@ html, body {
   .u-language-1 {
     margin-right: 0;
     margin-top: -5px;
-    margin-left: -10px;
+    margin-left: -35px;
   }
   
   /* Fix footer layout */
@@ -2159,5 +2222,34 @@ html, body {
   
   .u-footer .u-block-content {
     font-size: 12px;
+  }
+  
+  /* Language dropdown - single column layout */
+  .u-language-dropdown {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+    min-width: 60px !important;
+    padding: 8px !important;
+  }
+  
+  /* Individual language items in dropdown */
+  .u-language-dropdown .u-language-url {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    padding: 4px !important;
+  }
+  
+  /* Center flag icons in dropdown */
+  .u-language-dropdown .u-icon {
+    display: block !important;
+    margin: 0 auto !important;
+  }
+  
+  /* Align dropdown to right edge */
+  .u-language-1 .u-language-dropdown {
+    left: auto !important;
+    right: 0 !important;
   }
 }
