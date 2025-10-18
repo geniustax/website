@@ -103,6 +103,46 @@
   padding: 19px 0 20px;
 }
 
+/* Fix form positioning when status messages appear */
+.u-section-1 .u-form-send-message {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.u-section-1 .u-form-send-success {
+  bottom: -50px;
+  color: #28a745;
+  font-weight: 600;
+}
+
+.u-section-1 .u-form-send-error {
+  bottom: -50px;
+  color: #dc3545;
+  font-weight: 600;
+}
+
+.u-section-1 .u-form-sending {
+  bottom: -50px;
+  color: #6c757d;
+  font-weight: 600;
+}
+
+/* Prevent form container from shifting */
+.u-section-1 .u-form-1 {
+  position: relative;
+  min-height: 380px;
+}
+
+/* Ensure submit button stays in place */
+.u-section-1 .u-form-submit {
+  position: relative;
+  z-index: 5;
+}
+
 .u-section-1 .u-layout-cell-2 {
   min-height: 593px;
 }

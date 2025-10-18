@@ -55,7 +55,7 @@ export default async function handler(req, res) {
     return res.status(422).json({ ok: false, error: 'Сообщение обязательно для заполнения' });
   }
 
-  const to = 'anna.chemic@gmail.com';
+  const to = 'info@geniustax.nl';
   const from = 'GeniusTax Website <onboarding@resend.dev>';
   const apiKey = process.env.RESEND_API_KEY;
 
