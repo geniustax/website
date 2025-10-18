@@ -2025,15 +2025,21 @@
 }
 
 /* Force header layout to match index across widths and add safe padding */
-.u-header .u-sheet.u-sheet-1 {
-  width: 100% !important;
-  max-width: 100% !important;
-  margin: 0 !important;
-  padding-left: max(10px, env(safe-area-inset-left)) !important;
-  padding-right: max(10px, env(safe-area-inset-right)) !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: flex-start !important;
+@media (max-width: 939px) {
+  .u-header .u-sheet.u-sheet-1 {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding-left: max(10px, env(safe-area-inset-left)) !important;
+    padding-right: max(10px, env(safe-area-inset-right)) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+  }
+}
+
+@media (min-width: 940px) {
+  .u-header .u-sheet.u-sheet-1 { display: block !important; }
 }
 
 .u-header .u-logo {
@@ -2041,20 +2047,9 @@
   margin-left: 6px !important;
 }
 
-.u-header .u-menu-1 {
-  position: static !important;
-  margin: 0 10px 0 0 !important;
-  display: flex !important;
-  align-items: center !important;
-  gap: 0 !important;
-  order: 2 !important;
-}
+.u-header .u-menu-1 { position: static !important; margin: 0 10px 0 0 !important; }
 
-.u-header .u-language-1 {
-  position: static !important;
-  margin: 0 8px 0 -35px !important;
-  order: 1 !important;
-}
+.u-header .u-language-1 { position: static !important; margin: 0 10px 0 0 !important; }
 
 /* Enlarge active language selector to match other pages */
 .u-language-1 > .u-language-active {
@@ -2066,12 +2061,10 @@
 /* Nudge caret a bit higher to match other pages */
 .u-language-1 .u-caret-svg { position: relative; top: -2px; display: inline-block; }
 
-.u-language-1 .u-language-dropdown {
-  left: auto !important;
-  right: 0 !important;
-}
+.u-language-1 .u-language-dropdown { left: auto !important; right: 0 !important; }
 
 /* Compact hamburger on mobile */
+/* default desktop: let nicepage hide it; mobile override below */
 .u-menu .menu-collapse {
   padding: 6px !important;
   min-width: 44px !important;
@@ -2106,3 +2099,27 @@
 .u-footer h5.u-block-header { margin: 0 0 4px !important; }
 .u-footer .u-line-1 { margin: 6px 0 4px !important; }
 .u-footer .u-btn-3, .u-footer .u-btn-4 { margin-top: 2px !important; }
+
+/* Header alignment rules: mobile/tablet vs desktop */
+/* Fallback logo sizing to avoid oversized logo even if header isn't wrapped as expected */
+a.u-image.u-logo.u-image-1 { width: 126px !important; height: 126px !important; display: inline-block !important; }
+.u-logo-image-1 { width: 100% !important; height: 100% !important; object-fit: contain !important; }
+@media (max-width: 939px) {
+  .u-header .u-menu-1 { order: 2 !important; }
+  .u-header .u-language-1 { order: 1 !important; margin: 0 8px 0 -35px !important; }
+  .u-menu .menu-collapse { display: flex !important; padding: 6px !important; min-width: 44px !important; justify-content: center !important; align-items: center !important; }
+}
+
+@media (min-width: 940px) {
+  /* Desktop header layout: logo | centered nav | language | CTA */
+  .u-header .u-sheet-1 { display: flex !important; align-items: center !important; flex-wrap: nowrap !important; padding-left: 20px; padding-right: 20px; }
+  .u-menu .menu-collapse { display: none !important; }
+  .u-header .u-logo { order: 1 !important; margin-right: 24px !important; }
+  /* Explicit logo size to avoid stretching */
+  .u-header .u-image-1 { width: 126px !important; height: 126px !important; flex: 0 0 126px !important; display: block !important; }
+  .u-header .u-logo-image-1 { width: 100% !important; height: 100% !important; object-fit: contain !important; }
+  .u-header .u-nav-container { order: 2 !important; flex: 1 1 auto !important; min-width: 0 !important; display: flex !important; justify-content: center !important; }
+  .u-header .u-language-1 { order: 3 !important; display: inline-flex !important; align-items: center !important; margin: 0 12px 0 16px !important; }
+  .u-header .u-btn-1 { order: 4 !important; margin: 0 0 0 12px !important; display: inline-flex !important; align-items: center !important; white-space: nowrap !important; }
+  .u-header .u-language-1, .u-header .u-language-1 * { white-space: nowrap !important; }
+}

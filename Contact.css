@@ -143,6 +143,18 @@
   z-index: 5;
 }
 
+/* Fix layout cell vertical alignment to prevent shifting */
+.u-section-1 .u-layout-cell-1 {
+  min-height: 600px !important;
+}
+
+/* Override vertical centering for form container */
+.u-section-1 .u-container-layout-1 {
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  padding-top: 40px !important;
+}
+
 .u-section-1 .u-layout-cell-2 {
   min-height: 593px;
 }
