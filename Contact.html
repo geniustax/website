@@ -28,8 +28,107 @@
     <meta property="og:type" content="website">
   <meta name="referrer" content="origin"><meta data-intl-tel-input-cdn-path="intlTelInput/">
   
-</head>
-  <body data-path-to-root="./" data-include-products="false" class="u-body u-clearfix u-stick-footer u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-header" id="header" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-sm u-sheet-1">
+ </head>
+  <body data-path-to-root="./" data-include-products="false" class="u-body u-clearfix u-stick-footer u-xl-mode" data-lang="en"><link rel="stylesheet" href="assets/header.css"><style>.u-header{display:none!important}</style>
+
+<div data-header></div><script defer src="assets/header-component.js"></script>
+<!--
+<header class="site-header" role="banner" style="display:none">
+  <div class="site-header__container" style="display:flex;align-items:center;gap:24px;padding:14px 20px;">
+    <a href="index.html" class="site-header__logo" aria-label="GeniusTax Home" style="display:inline-block;flex:0 0 auto;">
+      <img src="images/brand.png" alt="GeniusTax" width="126" height="126" style="display:block;width:126px;height:126px;object-fit:contain;" />
+    </a>
+
+    <button class="site-header__burger" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="primary-nav" class="site-header__nav" role="navigation" style="flex:1 1 auto;">
+      <ul class="site-header__menu" style="list-style:none;display:flex;justify-content:center;gap:64px;margin:0;padding:0;">
+        <li><a data-i18n="nav.home" href="index.html">Home</a></li>
+        <li><a data-i18n="nav.services" href="Services.html">Services</a></li>
+        <li><a data-i18n="nav.about" href="About-us.html">About</a></li>
+        <li><a data-i18n="nav.contact" href="Contact.html">Contacts</a></li>
+      </ul>
+    </nav>
+
+    <div class="site-header__right" style="display:flex;align-items:center;gap:12px;flex:0 0 auto;">
+      <div class="site-header__lang-wrap" style="position:relative;">
+        <button class="site-header__lang" aria-label="Language selector" aria-expanded="false">
+          <svg viewBox="0 0 16 16" width="16" height="16" class="site-header__caret"><polygon points="8,12 2,4 14,4"></polygon></svg>
+          <span class="site-header__flag" aria-hidden="true"></span>
+        </button>
+        <div class="site-header__lang-menu" role="menu" style="display:none;position:absolute;right:0;top:calc(100% + 8px);background:#fff;border:1px solid #e5e7eb;box-shadow:0 8px 24px rgba(0,0,0,.12);border-radius:6px;padding:8px;z-index:1000;min-width:140px">
+          <button class="site-header__lang-item" data-lang="en" style="display:flex;align-items:center;gap:8px;background:none;border:0;width:100%;text-align:left;padding:8px 10px;cursor:pointer">English</button>
+          <button class="site-header__lang-item" data-lang="ru" style="display:flex;align-items:center;gap:8px;background:none;border:0;width:100%;text-align:left;padding:8px 10px;cursor:pointer">Русский</button>
+          <button class="site-header__lang-item" data-lang="ro" style="display:flex;align-items:center;gap:8px;background:none;border:0;width:100%;text-align:left;padding:8px 10px;cursor:pointer">Română</button>
+        </div>
+      </div>
+      <a href="https://cal.com/geniustax/geniustax?overlayCalendar=true" class="site-header__cta" data-i18n="cta.consult" style="background:#f2a13a;color:#fff;padding:12px 22px;border-radius:0;font-weight:700;text-decoration:none;white-space:nowrap;">Консультация</a>
+    </div>
+  </div>
+
+<!--/header placeholder-->
+<script>
+  (function(){
+    var b = document.currentScript && document.currentScript.previousElementSibling.querySelector('.site-header__burger');
+    var nav = document.currentScript && document.currentScript.previousElementSibling.querySelector('#primary-nav');
+    if (b && nav) {
+      b.addEventListener('click', function(){
+        var open = nav.classList.toggle('is-open');
+        b.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
+    // set active flag from localStorage lang
+    var lang = (localStorage && localStorage.getItem('lang')) || 'en';
+    var flag = document.currentScript.previousElementSibling.querySelector('.site-header__flag');
+    if (flag) {
+      var svg = '';
+      if (lang === 'ru') svg = '<svg viewBox="0 0 112 112" width="24" height="24"><rect y="16" fill="#F4F4F4" width="112" height="26.7"/><rect y="42.7" fill="#323E95" width="112" height="26.7"/><rect y="69.3" fill="#D8001E" width="112" height="26.7"/></svg>';
+      else if (lang === 'ro') svg = '<svg viewBox="0 0 112 112" width="24" height="24"><rect y="16" fill="#F3D54D" width="112" height="80"/><rect y="16" fill="#293D86" width="37.3" height="80"/><rect x="74.7" y="16" fill="#D23333" width="37.3" height="80"/></svg>';
+      else svg = '<svg viewBox="0 0 112 112" width="24" height="24"><rect y="16" fill="#19237F" width="112" height="80"/><path fill="#EDEDED" d="M47.8,16h3.5v33.7H0v-4.8h27.5L0,25.9v-3.8l33.2,22.8h7.7L0,16.8V16h8.8l39,26.9V16z M75,44.9h-7.7L109.4,16h-5.1L65.1,42.9V16h-3.4v33.7H112v-4.8H85.4L112,26.6v-7L75,44.9z M61.7,96h3.4V70.7l37,25.3h9.9v-0.8L73.2,68.7H81l31,21.2v-3.1L85.4,68.7H112v-4.8H61.7V96z M0,68.7h27.5L0,87.7v7.8l39.1-26.8h7.8L7.1,96H11l36.8-25.3V96h3.5V63.9H0V68.7z"/><path fill="#BD0034" d="M112,16v3.6L75,44.9h-7.7L109.4,16H112z M73.2,68.7L112,95.2v-5.3L81,68.7H73.2z M40.9,44.9L0,16.8v5.3l33.2,22.8C33.2,44.9,40.9,44.9,40.9,44.9z M39.1,68.7L0,95.5V96h7.1l39.8-27.3H39.1z M61.7,16H51.3v33.7H0v14.2h51.3V96h10.4V63.9H112V49.7H61.7V16z"/></svg>';
+      flag.innerHTML = svg;
+    }
+
+    // mark active menu item by current pathname
+    try {
+      var current = new URL(location.href);
+      var path = current.pathname.toLowerCase();
+      if (path === '/' || path === '') path = '/index.html';
+      var root = document.currentScript.previousElementSibling;
+      var links = root.querySelectorAll('.site-header__menu a');
+      links.forEach(function(a){
+        var link = new URL(a.getAttribute('href'), location.href).pathname.toLowerCase();
+        // consider both exact and partial match (about-us)
+        var isActive = (path === link) || (path.endsWith('/index.html') && (link.endsWith('/index.html') || link === './')) || (path.indexOf('about-us')>-1 && link.indexOf('about-us')>-1) || (path.indexOf('services')>-1 && link.indexOf('services')>-1) || (path.indexOf('contact')>-1 && link.indexOf('contact')>-1);
+        if (isActive) a.classList.add('is-active');
+      });
+    } catch(e){}
+
+    // language dropdown toggle and change
+    try{
+      var wrap = root.querySelector('.site-header__lang-wrap');
+      var btn = root.querySelector('.site-header__lang');
+      var menu = root.querySelector('.site-header__lang-menu');
+      if (btn && wrap && menu){
+        btn.addEventListener('click', function(e){
+          e.stopPropagation(); var open = menu.style.display === 'block';
+          menu.style.display = open ? 'none' : 'block';
+          btn.setAttribute('aria-expanded', open ? 'false' : 'true');
+        });
+        document.addEventListener('click', function(){ menu.style.display='none'; btn.setAttribute('aria-expanded','false'); });
+        menu.addEventListener('click', function(e){
+          var t = e.target.closest('[data-lang]');
+          if (!t) return;
+          var l = t.getAttribute('data-lang');
+          try{ localStorage.setItem('lang', l); }catch(_){ }
+          location.reload();
+        });
+      }
+    }catch(e){}
+  })();
+  </script>
+<header class="u-clearfix u-header u-header" id="header" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-sm u-sheet-1">
         <a href="#" class="u-image u-logo u-image-1" data-image-width="1024" data-image-height="1024">
           <img src="images/brand.png" class="u-logo-image u-logo-image-1">
         </a>
