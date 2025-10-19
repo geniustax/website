@@ -1,18 +1,18 @@
-.site-header{background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.06)}
-.site-header__container{max-width:1200px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;gap:24px}
-.site-header__logo img{width:126px;height:126px;object-fit:contain;display:block}
+.site-header{background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.06);position:relative;z-index:1000}
+.site-header__container{max-width:1200px;margin:0 auto;padding:8px 16px;display:flex;align-items:center;gap:20px}
+.site-header__logo img{width:96px;height:96px;object-fit:contain;display:block}
 .site-header__burger{display:none;flex-direction:column;gap:4px;background:none;border:0;cursor:pointer}
-.site-header__burger span{width:24px;height:3px;background:#1f3654;display:block}
+.site-header__burger span{width:22px;height:2px;background:#1f3654;display:block}
 .site-header__nav{flex:1 1 auto}
-.site-header__menu{list-style:none;display:flex;justify-content:center;gap:64px;margin:0;padding:0}
+.site-header__menu{list-style:none;display:flex;justify-content:center;gap:40px;margin:0;padding:0}
 .site-header__menu a{color:#1f3654!important;text-decoration:none;font-weight:600;transition:color .2s ease}
 .site-header__menu a:hover{color:#0097a7!important}
 .site-header__menu a.is-active{color:#259bca!important;font-weight:700;position:relative}
-.site-header__menu a.is-active::after{content:"";position:absolute;left:0;right:0;bottom:-8px;height:3px;background:#259bca;border-radius:2px}
-.site-header__right{display:flex;align-items:center;gap:12px;margin-left:auto}
+.site-header__menu a.is-active::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:#259bca;border-radius:2px}
+.site-header__right{display:flex;align-items:center;gap:10px;margin-left:auto}
 .site-header__lang{display:inline-flex;align-items:center;gap:8px;background:none;border:0;cursor:pointer}
 .site-header__flag svg{display:block}
-.site-header__cta{background:#f2a13a;color:#fff;padding:12px 22px;border-radius:0;font-weight:700;text-decoration:none;white-space:nowrap}
+.site-header__cta{background:#f2a13a;color:#fff;padding:10px 18px;border-radius:0;font-weight:700;text-decoration:none;white-space:nowrap}
 .site-header__overlay{display:none}
 
 /* Language dropdown */

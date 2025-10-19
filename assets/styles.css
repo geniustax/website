@@ -1169,3 +1169,45 @@ a:hover {
 .cta .btn-secondary:hover {
   background: rgba(255,255,255,0.1);
 }
+
+/* ===== Overrides: Make top hero fit viewport on desktop ===== */
+@media (min-width: 940px){
+  /* Fit hero section to viewport height minus header (only homepage hero) */
+  #sec-31d2 .u-sheet-1{ min-height: calc(100vh - 120px) !important; }
+  #sec-31d2 .u-layout-wrap-1{ margin-top: 20px !important; margin-bottom: 20px !important; }
+  #sec-31d2 .u-layout-cell-1,
+  #sec-31d2 .u-layout-cell-2{ min-height: auto !important; }
+  #sec-31d2 .u-text-1{ margin-top: 0 !important; }
+  #sec-31d2 .u-image-1{ height: auto !important; max-height: calc(100vh - 200px) !important; margin-top: 0 !important; }
+  #sec-31d2 .u-shape-1{ height: auto !important; max-height: calc(100vh - 220px) !important; margin-top: 0 !important; }
+  /* Center hero text block on index hero */
+  #sec-31d2 .u-layout-cell-1{ min-height: calc(100vh - 120px) !important; }
+  #sec-31d2 .u-container-layout-1{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    justify-content:center !important;
+    text-align:center !important;
+    padding: 0 20px !important;
+  }
+  #sec-31d2 .u-text-1{ text-align:center !important; margin: 0 !important; }
+  #sec-31d2 .u-btn-1{ margin: 24px auto 0 !important; }
+}
+
+/* Fit hero to viewport on Services and About (desktop) */
+@media (min-width: 940px){
+  /* Services hero */
+  #sec-32b3 .u-sheet-1{ min-height: calc(100vh - 120px) !important; display:flex !important; align-items:center !important; }
+  /* About hero */
+  #carousel_8fae .u-sheet-1{ height: calc(100vh - 120px) !important; min-height: auto !important; padding-top:24px !important; padding-bottom:24px !important; display:flex !important; align-items:center !important; overflow:hidden !important; }
+  /* Enlarge photo without growing section height */
+  #carousel_8fae .u-image-1{
+    width: auto !important;
+    height: calc(100vh - 160px) !important; /* bigger image within hero height */
+    max-height: none !important;
+    object-fit: cover !important;
+    margin-top: 0 !important;
+  }
+  #carousel_8fae .u-group-1{ margin-top: 0 !important; }
+  #carousel_8fae .u-shape-1{ margin-top: 160px !important; }
+}
