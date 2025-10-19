@@ -32,6 +32,12 @@
       var val = parseKey(I18N[lang], key);
       if (val!=null) el.textContent = val;
     });
+    // Support HTML injection for rich content blocks
+    document.querySelectorAll('[data-i18n-html]').forEach(function(el){
+      var key = el.getAttribute('data-i18n-html');
+      var val = parseKey(I18N[lang], key);
+      if (val!=null) el.innerHTML = val;
+    });
   }
 
   function renderFlag(lang){
@@ -63,14 +69,24 @@
     });
   }
 
-  function init(){
-    var lang = detectLang();
-    localStorage.setItem('lang', lang);
+  function applyAll(lang){
+    if (!lang) lang = detectLang();
+    try{ localStorage.setItem('lang', lang); }catch(_){ }
     applyMeta(lang);
     applyTexts(lang);
-    wireLanguageLinks();
     updateActiveLanguageUI(lang);
   }
+
+  function init(){
+    var lang = detectLang();
+    applyAll(lang);
+    wireLanguageLinks();
+  }
+
+  // expose for dynamic content (e.g., header injected later)
+  window.applyI18n = applyAll;
+  // listen for manual refresh triggers
+  window.addEventListener('i18n:refresh', function(){ applyAll(); });
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();

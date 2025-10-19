@@ -1,0 +1,49 @@
+.site-footer{background:var(--palette-1-light-3, #e1f5fe);border-top:1px solid rgba(0,0,0,.05);color:#333}
+.site-footer__container{max-width:1200px;margin:0 auto;padding:24px 20px}
+.site-footer__cols{display:flex;gap:40px;flex-wrap:wrap;align-items:flex-start}
+.site-footer__title{margin:0 0 8px 0;font-weight:700}
+.site-footer__text{margin:0;line-height:1.5}
+.site-footer__link{color:#1f3654;text-decoration:underline}
+.site-footer__link:hover{color:#259bca;text-decoration:underline}
+.site-footer__copy{margin-top:16px;font-size:.9rem;color:#51657b;text-align:center}
+@media (max-width: 640px){
+  .site-footer__cols{flex-direction:column;gap:16px}
+}
+
+/* New layout: brand row (logo + address) and contacts aligned in one line */
+/* Mobile-first: stack and center */
+.site-footer__top{display:flex;flex-direction:column;align-items:center;gap:16px}
+.site-footer__brand{display:flex;align-items:center;gap:16px;justify-content:center}
+.site-footer__address{min-width:260px}
+.site-footer__links{display:flex;gap:20px;align-items:center;flex-wrap:wrap;justify-content:center}
+.site-footer__social{display:flex;gap:14px;align-items:center}
+.site-footer__icon{color:#1f3654;display:inline-flex}
+.site-footer__icon:hover{color:#259bca}
+.site-footer__contacts{ text-align:center }
+
+/* Fine-tune: nudge contacts slightly left on wider screens */
+@media (min-width: 1024px){
+  /* Desktop: three even blocks — logo | address | contacts (social with links below) */
+  .site-footer__top{ display:grid; grid-template-columns:auto 1fr 1fr; column-gap:40px; align-items:start }
+  .site-footer__brand{ display:contents }
+  .site-footer__brand > img{ grid-column:1; justify-self:start }
+  .site-footer__address{ grid-column:2; text-align:left }
+  .site-footer__contacts{ grid-column:3; text-align:left; margin:0 }
+  .site-footer__links{ grid-column:1 / span 3; justify-content:center }
+}
+
+/* Mobile/tablet: keep logo + address in one row, but center the whole group */
+@media (max-width: 1023px){
+  .site-footer__brand{ flex-direction: row; justify-content:center; gap:20px; }
+  .site-footer__address{ min-width: 0; text-align: left; }
+  .site-footer__contacts{ transform:none; margin:0 auto; text-align:center; align-self:center }
+}
+
+/* Footer logo matches header size */
+.site-footer__brand img{width:126px;height:auto;display:block}
+
+@media (max-width: 640px){
+  .site-footer__top{flex-direction:column;align-items:center;gap:16px}
+  .site-footer__brand{flex:initial}
+  .site-footer__links{padding-top:4px; justify-content:center}
+}

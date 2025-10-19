@@ -32,3 +32,121 @@
   .site-header.is-open .site-header__overlay{display:block}
   .site-header__cta{display:none}
 }
+
+/* Align intro paragraph under About heading on all viewports */
+[data-i18n-html="home.introHTML"],
+[data-i18n-html="home.answer"],
+[data-i18n-html="home.question"]{
+  text-align:left !important;
+  margin-left:0 !important;
+  margin-right:0 !important;
+  padding-left:0 !important;
+}
+
+/* Testimonials cards: prevent excessive height and top-align content */
+#sec-c2de .u-repeater .u-container-layout{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start !important;
+  padding-top:12px !important;
+  padding-bottom:12px !important;
+}
+#sec-c2de .u-list-item{
+  height:auto !important;
+  min-height:unset !important;
+}
+
+/* Desktop: unify testimonial card heights and center content */
+@media (min-width: 940px){
+  /* Force consistent testimonial heights and center content */
+  #sec-c2de .u-repeater-1 .u-repeater-item,
+  #sec-c2de .u-repeater .u-repeater-item,
+  #sec-c2de .u-repeater-1 .u-list-item{
+    min-height: 380px !important;
+    display: flex !important;
+  }
+  #sec-c2de .u-repeater-1 .u-container-layout,
+  #sec-c2de .u-repeater .u-container-layout{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    height: 100% !important;
+    position: relative !important;
+    padding-bottom: 88px !important; /* reserve room for line + role */
+  }
+
+  /* Pin the underline and role to the bottom of the card */
+  #sec-c2de .u-line.u-line-horizontal{ 
+    position: absolute !important; 
+    left: 40px; right: 40px; bottom: 56px; 
+    margin: 0 auto !important;
+  }
+  #sec-c2de .u-container-layout h6:last-child{
+    position: absolute !important;
+    left: 40px; right: 40px; bottom: 20px; 
+    margin: 0 !important;
+  }
+}
+
+/* Center footer policy links */
+#footer .u-sheet-1{ text-align:center }
+#footer .u-btn-3,#footer .u-btn-4{display:inline-block;margin:8px 16px}
+#sec-c2de .u-repeater-1{
+  min-height:0 !important;
+  height:auto !important;
+  align-items:start !important;
+}
+
+/* Footer tweaks: prevent mid-word breaks and allow wider address block */
+#footer .u-position-2 .u-block-content.u-text{
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  max-width: 520px;
+}
+#sec-c2de .u-list-1{
+  min-height:0 !important;
+  height:auto !important;
+}
+#sec-c2de .u-repeater-item,
+#sec-c2de .u-list-item{
+  min-height:0 !important;
+  height:auto !important;
+}
+#sec-c2de .u-valign-bottom-lg,
+#sec-c2de .u-valign-bottom-sm{
+  padding-top:0 !important;
+  padding-bottom:0 !important;
+  margin-top:0 !important;
+}
+#sec-c2de h4.u-text,
+#sec-c2de p.u-text{
+  margin-top:0 !important;
+}
+/* Footer logo sizing fix to match header logo constraints */
+#footer .u-image-1,
+#footer .u-image.u-image-default,
+.u-footer .u-image-1,
+footer .footer-logo{
+  width: 140px !important;
+  max-width: 140px !important;
+  height: auto !important;
+  display: block;
+}
+
+/* Hide legacy Nicepage footer block on About page if still present */
+#legacy-footer-block{ display:none !important; }
+#legacy-footer-block ~ .u-text-5,
+#legacy-footer-block ~ .u-btn-3,
+#legacy-footer-block ~ .u-btn-4,
+#legacy-footer-block ~ .u-line-1{ display:none !important; }
+
+/* Footer: put logo and address in two columns with a gap */
+@media (min-width: 768px){
+  /* Use flex to separate logo and address reliably */
+  #footer .u-container-layout-1{ display:flex !important; align-items:center; gap:32px; }
+  #footer .footer-logo{ margin:0 !important; flex:0 0 auto; }
+  #footer .u-position-2{ position: static !important; flex:1 1 auto; }
+}
+@media (max-width: 767px){
+  #footer .u-container-layout-1{ display:block !important; }
+}

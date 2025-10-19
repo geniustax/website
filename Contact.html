@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <script defer src="assets/partials.js"></script>
+    <script defer src="assets/i18n.js"></script>
+    <script defer src="assets/i18n-apply.js"></script>
+    <link rel="stylesheet" href="assets/footer.css" media="screen">
+    <script defer src="assets/footer-component.js"></script>
     <script class="u-script" type="text/javascript" src="contact-form.js" defer=""></script>
     <meta name="generator" content="Nicepage 7.13.0, nicepage.com">
     
@@ -19,7 +24,7 @@
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
-		"name": "Голубой дизайн",
+		"name": "GeniusTax",
 		"logo": "images/brand.png"
 }</script>
     <meta name="theme-color" content="#0097a7">
@@ -29,7 +34,7 @@
   <meta name="referrer" content="origin"><meta data-intl-tel-input-cdn-path="intlTelInput/">
   
  </head>
-  <body data-path-to-root="./" data-include-products="false" class="u-body u-clearfix u-stick-footer u-xl-mode" data-lang="en"><link rel="stylesheet" href="assets/header.css"><style>.u-header{display:none!important}</style>
+  <body data-path-to-root="./" data-include-products="false" class="u-body u-clearfix u-stick-footer u-xl-mode" data-lang="en"><link rel="stylesheet" href="assets/header.css"><style>.u-header{display:none!important}.u-footer{display:none!important}</style>
 
 <div data-header></div><script defer src="assets/header-component.js"></script>
 <!--
@@ -64,7 +69,7 @@
           <button class="site-header__lang-item" data-lang="ro" style="display:flex;align-items:center;gap:8px;background:none;border:0;width:100%;text-align:left;padding:8px 10px;cursor:pointer">Română</button>
         </div>
       </div>
-      <a href="https://cal.com/geniustax/geniustax?overlayCalendar=true" class="site-header__cta" data-i18n="cta.consult" style="background:#f2a13a;color:#fff;padding:12px 22px;border-radius:0;font-weight:700;text-decoration:none;white-space:nowrap;">Консультация</a>
+      <a href="https://cal.com/geniustax/geniustax?overlayCalendar=true" class="site-header__cta" data-i18n="cta.consult" style="background:#f2a13a;color:#fff;padding:12px 22px;border-radius:0;font-weight:700;text-decoration:none;white-space:nowrap;">Book a consultation</a>
     </div>
   </div>
 
@@ -169,7 +174,7 @@
                     }
                 }</style>
         </nav>
-        <a href="https://cal.com/geniustax/geniustax?overlayCalendar=true" class="u-active-palette-3-base u-border-none u-btn u-button-style u-custom-color-4 u-hidden-md u-hidden-sm u-hidden-xs u-btn-1"> Консультация</a>
+        <a href="https://cal.com/geniustax/geniustax?overlayCalendar=true" class="u-active-palette-3-base u-border-none u-btn u-button-style u-custom-color-4 u-hidden-md u-hidden-sm u-hidden-xs u-btn-1" data-i18n="cta.consult"> Book a consultation</a>
         <div class="u-h-spacing-12 u-language u-language-content-icon u-language-layout-dropdown u-v-spacing-6 u-language-1">
           <a class="u-language-active u-language-url" data-lang-text="Русский" href="#" data-language="ru" style="background-image: none;">
             <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg><span class="u-icon u-language-icon u-language-ru u-icon-3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 112 112" x="0px" y="0px" style="width: 1em; height: 1em;"><rect y="16" fill="#F4F4F4" width="112" height="26.7"></rect><rect y="42.7" fill="#323E95" width="112" height="26.7"></rect><rect y="69.3" fill="#D8001E" width="112" height="26.7"></rect></svg></span>
@@ -192,8 +197,8 @@
           <div class="u-layout-row">
             <div class="u-align-left u-container-align-center u-container-align-left u-container-style u-layout-cell u-size-30 u-white u-layout-cell-1">
               <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-1">
-                <h3 class="u-align-center u-text u-text-1"> Заинтересованы в наших услугах?</h3>
-                <h4 class="u-align-center u-text u-text-2">Мы ответим в течение 24 часов! </h4>
+                <h3 class="u-align-center u-text u-text-1" data-i18n="contact.hero.title">Interested in our services?</h3>
+                <h4 class="u-align-center u-text u-text-2" data-i18n="contact.hero.subtitle">We respond within 24 hours!</h4>
                 <div class="u-expanded-width u-form u-form-1">
                   <form id="contact-form" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 0;" name="form" action="/api/contact" method="POST" autocomplete="on">
                     <div style="position:absolute;left:-5000px;opacity:0;pointer-events:none" aria-hidden="true">
@@ -201,43 +206,43 @@
                       <input type="text" id="company-field" name="company" tabindex="-1" autocomplete="off">
                     </div>
                     <div class="u-form-group u-form-name">
-                      <label class="u-label">Имя</label>
-                      <input type="text" placeholder="Как к вам обращаться? " id="name-daf4" name="name" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required="">
+                      <label class="u-label" data-i18n="contact.form.labels.name">Name</label>
+                      <input type="text" id="name-daf4" name="name" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required data-i18n-meta="placeholder:contact.form.placeholders.name">
                     </div>
                     <div class="u-form-email u-form-group">
                       <label class="u-label">Email</label>
-                      <input type="email" placeholder="Введите ваш emai" id="email-daf4" name="email" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required="">
+                      <input type="email" id="email-daf4" name="email" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required data-i18n-meta="placeholder:contact.form.placeholders.email">
                     </div>
                     <div class="u-form-group u-form-phone u-form-group-3">
-                      <label class="u-label">Телефон</label>
-                      <input type="tel" placeholder="Формат телефона: +1(123)4567890" id="phone-3da8" name="phone" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required="">
+                      <label class="u-label" data-i18n="contact.form.labels.phone">Phone</label>
+                      <input type="tel" id="phone-3da8" name="phone" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required data-i18n-meta="placeholder:contact.form.placeholders.phone">
                     </div>
                     <div class="u-form-group u-form-group-4">
-                      <label class="u-label">Услуги</label>
+                      <label class="u-label" data-i18n="contact.form.labels.service">Services</label>
                       <select id="service-selection" name="service" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle">
-                        <option value="">Выберите пакет услуг...</option>
-                        <option value="basic">Базовый пакет</option>
-                        <option value="standard">Стандартный пакет</option>
-                        <option value="premium">Премиум пакет</option>
-                        <option value="individual">Индивидуальные услуги</option>
+                        <option value="" data-i18n="contact.form.options.select">Select a package...</option>
+                        <option value="basic" data-i18n="contact.form.options.basic">Basic package</option>
+                        <option value="standard" data-i18n="contact.form.options.standard">Standard package</option>
+                        <option value="premium" data-i18n="contact.form.options.premium">Premium package</option>
+                        <option value="individual" data-i18n="contact.form.options.individual">Individual services</option>
                       </select>
                     </div>
                     <div class="u-form-group u-form-message u-form-group-5">
                       <label class="u-form-control-hidden u-label"></label>
-                      <textarea placeholder="Ваш запрос..." id="message-daf4" name="message" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required=""></textarea>
+                      <textarea id="message-daf4" name="message" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required data-i18n-meta="placeholder:contact.form.placeholders.message"></textarea>
                     </div>
                     <div class="u-form-agree u-form-group u-form-group-6">
                       <label class="u-field-label"></label>
                       <input type="checkbox" id="agree-f183" name="agree" class="u-agree-checkbox u-field-input" required="">
-                      <label class="u-agree-label u-field-label" style="">Я принимаю <a href="#">Условия использования</a>
+                      <label class="u-agree-label u-field-label" style="" data-i18n-html="contact.form.agreeHTML">I accept <a href="#">Terms of Use</a>
                       </label>
                     </div>
                     <div class="u-align-left u-form-group u-form-submit">
-                      <button type="submit" class="u-active-custom-color-3 u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-palette-1-base u-btn u-btn-submit u-button-style u-custom-color-3 u-hover-color-var u-text-active-white u-text-hover-white u-btn-1">Отправить запрос</button>
+                      <button type="submit" class="u-active-custom-color-3 u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-palette-1-base u-btn u-btn-submit u-button-style u-custom-color-3 u-hover-color-var u-text-active-white u-text-hover-white u-btn-1" data-i18n="contact.form.submit">Send request</button>
                     </div>
-                    <div id="form-success" class="u-form-send-message u-form-send-success" style="display: none;">Спасибо! Ваше сообщение отправлено.</div>
-                    <div id="form-error" class="u-form-send-error u-form-send-message" style="display: none;">Отправка не удалась. Пожалуйста, попробуйте еще раз.</div>
-                    <div id="form-sending" class="u-form-send-message" style="display: none;">Отправляем сообщение...</div>
+                    <div id="form-success" class="u-form-send-message u-form-send-success" style="display: none;" data-i18n="contact.form.success">Thanks! Your message has been sent.</div>
+                    <div id="form-error" class="u-form-send-error u-form-send-message" style="display: none;" data-i18n="contact.form.error">Sending failed. Please try again.</div>
+                    <div id="form-sending" class="u-form-send-message" style="display: none;" data-i18n="contact.form.sending">Sending message...</div>
                   </form>
                 </div>
               </div>
@@ -264,17 +269,17 @@
 	C5.351,51.312,5.351,50.679,4.961,50.288z M17.511,44.809L39.889,22.43c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0
 	L16.097,43.395l-4.773,0.53l0.53-4.773l22.38-22.378c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0L10.44,37.738
 	l-3.183,0.354L34.94,10.409l9.9,9.9L17.157,47.992L17.511,44.809z M49.082,16.067l-9.9-9.9l1.415-1.415l9.9,9.9L49.082,16.067z"></path></svg></span>
-                        <h6 class="u-custom-font u-font-montserrat u-text u-text-3"><b>Бухгалтерия</b>
+                        <h6 class="u-custom-font u-font-montserrat u-text u-text-3" data-i18n="features.bookkeeping.title"><b>Bookkeeping</b>
                         </h6>
-                        <p class="u-text u-text-4"><i>Ведение учёта для ZZP, VOF, BV и частных лиц. Подготовка и хранение документов в соответствии с требованиями налоговой.</i>
+                        <p class="u-text u-text-4" data-i18n="features.bookkeeping.desc"><i>Accounting for ZZP, VOF, BV and individuals.</i>
                         </p>
                       </div>
                     </div>
                     <div class="u-align-left u-container-align-left u-container-style u-list-item u-repeater-item u-shape-rectangle">
                       <div class="u-container-layout u-similar-container u-valign-bottom-xl u-valign-top-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-4"><span class="u-file-icon u-icon u-icon-rectangle u-palette-1-base u-text-hover-palette-1-dark-2 u-text-white u-icon-2"><img src="images/3135673-c254ee72.png" alt=""></span>
-                        <h6 class="u-custom-font u-font-montserrat u-text u-text-5"><b>Налоги</b>
+                        <h6 class="u-custom-font u-font-montserrat u-text u-text-5" data-i18n="features.taxes.title"><b>Taxes</b>
                         </h6>
-                        <p class="u-text u-text-6"><i>Подготовка и подача BTW, IB, VPB деклараций вовремя и без ошибок. Консультации по налоговому планированию.</i>
+                        <p class="u-text u-text-6" data-i18n="features.taxes.desc"><i>BTW, IB, VPB filings — on time and accurate.</i>
                         </p>
                       </div>
                     </div>
@@ -282,7 +287,7 @@
                       <div class="u-container-layout u-similar-container u-valign-bottom-xl u-valign-top-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-5"><span class="u-file-icon u-icon u-icon-rectangle u-palette-1-base u-text-hover-palette-1-dark-2 u-text-white u-icon-3"><img src="images/3073431-ac80768a.png" alt=""></span>
                         <h6 class="u-custom-font u-font-montserrat u-text u-text-7"><b>Payroll</b>
                         </h6>
-                        <p class="u-text u-text-8"><i>Расчёт зарплат, подача отчётности, взаимодействие с налоговыми органами по сотрудникам.</i>
+                        <p class="u-text u-text-8" data-i18n="features.payroll.desc"><i>Payroll processing and reporting</i>
                         </p>
                       </div>
                     </div>
@@ -297,62 +302,15 @@
     
     
     
-    <footer class="u-clearfix u-footer u-palette-1-light-3" id="footer"><div class="u-clearfix u-sheet u-valign-top-lg u-valign-top-md u-valign-top-sm u-sheet-1">
-        <div class="data-layout-selected u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-clearfix u-expanded-width u-gutter-0 u-layout-custom-xs u-layout-wrap u-layout-wrap-1">
-          <div class="u-gutter-0 u-layout">
-            <div class="u-layout-row">
-              <div class="u-align-left u-container-align-left u-container-style u-layout-cell u-shape-rectangle u-size-30-lg u-size-30-md u-size-30-sm u-size-30-xl u-size-60-xs u-layout-cell-1">
-                <div class="u-container-layout u-container-layout-1"><!--position-->
-                  <div data-position="" class="u-position u-position-1"><!--block-->
-                    <div class="u-block">
-                      <div class="u-block-container u-clearfix"></div>
-                    </div><!--/block-->
-                  </div><!--/position-->
-                  <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-1" src="images/brand.png" alt="" data-image-width="1024" data-image-height="1024"><!--position-->
-                  <div data-position="" class="u-position u-position-2"><!--block-->
-                    <div class="u-block">
-                      <div class="u-block-container u-clearfix"><!--block_header-->
-                        <h5 class="u-block-header u-text"><!--block_header_content--> Адрес<!--/block_header_content--></h5><!--/block_header--><!--block_content-->
-                        <div class="u-block-content u-text"><!--block_content_content--> KVK: ​
-89654889 <br> Boschjesstraat 22B&nbsp;<br>1541KK Koog aan de Zaan&nbsp;<!--/block_content_content-->
-                        </div><!--/block_content-->
-                      </div>
-                    </div><!--/block-->
-                  </div><!--/position-->
-                </div>
-              </div>
-              <div class="u-align-left u-container-align-left u-container-style u-layout-cell u-shape-rectangle u-size-30-lg u-size-30-md u-size-30-sm u-size-30-xl u-size-60-xs u-layout-cell-2">
-                <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-container-layout-2"><!--position-->
-                  <div data-position="" class="u-position u-position-3"><!--block-->
-                    <div class="u-block">
-                      <div class="u-block-container u-clearfix"><!--block_header-->
-                        <h5 class="u-align-center-xs u-block-header u-text"><!--block_header_content-->Контакты <!--/block_header_content--></h5><!--/block_header--><!--block_content-->
-                        <div class="u-align-center-xs u-block-content u-text"><!--block_content_content-->Email:&nbsp; <a href="mailto:info@geniustax.nl?subject=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D0%B1%D1%83%D1%85%D0%B3%D0%B0%D0%BB%D1%82%D0%B5%D1%80%D1%81%D0%BA%D0%B8%D1%85%20%D1%83%D1%81%D0%BB%D1%83%D0%B3" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">info@geniustax.nl</a>
-                          <br>Телефон: <a href="tel:+31644492189" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2">+31644492189 </a>
-                          <br>Часы работы​: пн-пт 9:00 - 19:00<!--/block_content_content-->
-                        </div><!--/block_content-->
-                      </div>
-                    </div><!--/block-->
-                  </div><!--/position-->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="u-align-center u-small-text u-text u-text-variant u-text-5"> © 2025 Все права защищены</p>
-        <a href="" class="u-active-none u-border-2 u-border-active-palette-2-dark-1 u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-base u-btn u-button-style u-hover-none u-none u-text-hover-palette-1-light-1 u-text-palette-1-base u-btn-3"> Privacy Policy (GDPR) </a>
-        <a href="Terms-of-use.html" data-page-id="1008930626" class="u-active-none u-border-2 u-border-active-palette-2-dark-1 u-border-hover-palette-1-dark-1 u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-base u-btn u-button-style u-hover-none u-none u-text-hover-palette-1-light-1 u-text-palette-1-base u-btn-4" title="Terms of use" target="_blank"> Terms &amp; Conditions </a>
-        <div class="u-align-left u-border-1 u-border-white u-expanded-width u-line u-line-horizontal u-opacity u-opacity-25 u-line-1"></div>
-      </div></footer>
-    <section class="u-backlink u-clearfix u-grey-80"></section>
+    
 
   <!-- WhatsApp Floating Button -->
-  <a href="https://api.whatsapp.com/send?phone=31644492189&text=Здравствуйте!%20Интересуют%20ваши%20бухгалтерские%20услуги"
+  <a href="https://api.whatsapp.com/send?phone=31644492189&text=Hello!%20I%20am%20interested%20in%20your%20accounting%20services"
      class="whatsapp-float"
      target="_blank"
      rel="noopener noreferrer">
     <i class="fab fa-whatsapp"></i>
-    <div class="whatsapp-text">Написать нам</div>
+    <div class="whatsapp-text" data-i18n="contact.whatsapp.text">Message us</div>
   </a>
 
   <script>
@@ -380,21 +338,23 @@
         if (submitBtn) submitBtn.disabled = true;
 
         const serviceValue = form.service.value;
-        const serviceNames = {
-          basic: 'Базовый пакет',
-          standard: 'Стандартный пакет',
-          premium: 'Премиум пакет',
-          individual: 'Индивидуальные услуги'
-        };
+          const lang = (localStorage && localStorage.getItem('lang')) || 'en';
+          const t = (window.I18N && window.I18N[lang]) ? window.I18N[lang] : window.I18N.en;
+          const serviceNames = {
+            basic: (t.contact && t.contact.form && t.contact.form.options.basic) || 'Basic package',
+            standard: (t.contact && t.contact.form && t.contact.form.options.standard) || 'Standard package',
+            premium: (t.contact && t.contact.form && t.contact.form.options.premium) || 'Premium package',
+            individual: (t.contact && t.contact.form && t.contact.form.options.individual) || 'Individual services'
+          };
 
-        const payload = {
-          name: form.name.value,
-          email: form.email.value,
-          phone: form.phone.value,
-          service: serviceValue ? serviceNames[serviceValue] : 'Не выбрано',
-          message: form.message.value,
-          company: form.company ? form.company.value : ''
-        };
+          const payload = {
+            name: form.name.value,
+            email: form.email.value,
+            phone: form.phone.value,
+            service: serviceValue ? serviceNames[serviceValue] : ((t.contact && t.contact.form && t.contact.form.options.select) || 'Not selected'),
+            message: form.message.value,
+            company: form.company ? form.company.value : ''
+          };
 
         try {
           const resp = await fetch('/api/contact', {
@@ -422,4 +382,37 @@
     });
   </script>
 
+<div data-footer></div>
+<script>
+  // Remove legacy Nicepage footer block(s) that sit before the backlink section
+  (function(){
+    function removeLegacy(){
+      var backlink = document.querySelector('section.u-backlink');
+      if (backlink){
+        // Remove everything between the last content section and the backlink
+        var node = backlink.previousElementSibling;
+        while (node && node.tagName !== 'SECTION'){
+          var prev = node.previousElementSibling;
+          try { node.remove(); } catch(e){}
+          node = prev;
+        }
+        try { backlink.remove(); } catch(e){}
+      }
+      // Extra safety: remove any element that contains company address block
+      try{
+        var marker = Array.from(document.querySelectorAll('body *')).find(function(el){
+          var t = el.textContent || '';
+          return t.indexOf('Boschjesstraat 22B')>-1 && t.indexOf('1541KK')>-1;
+        });
+        if (marker){
+          var cur = marker;
+          while (cur && !(cur.className||'').match(/data-layout-selected|u-layout-row|u-layout-wrap-1/)) cur = cur.parentElement;
+          if (cur) cur.remove();
+        }
+      }catch(e){}
+    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', removeLegacy);
+    else removeLegacy();
+  })();
+</script>
 </body></html>
