@@ -43,7 +43,7 @@ window.I18N = {
     benefits: {
       title: "Why choose us",
       transparent: { title: "Transparent pricing", desc: "We work with fixed fees and no hidden costs — you always know what you pay for." },
-      fast: { title: "Fast response", desc: "We answer within 24–48 hours — timely support for your business." },
+      fast: { title: "Fast response", desc: "We answer within 24 hours — timely support for your business." },
       full: { title: "Full range of services", desc: "From company registration to bookkeeping and tax filings — all in one place." },
       languages: { title: "Multilingual support", desc: "Consultations in Russian, Romanian and English — talk the language you prefer." }
     },
@@ -130,7 +130,7 @@ window.I18N = {
       why: {
         title: "Why choose us",
         cards: {
-          fast: { title: "Fast response", desc: "We answer within 24–48 hours — timely support for your business." },
+          fast: { title: "Fast response", desc: "We answer within 24 hours — timely support for your business." },
           multilingual: { title: "Multilingual support", desc: "Consultations in Russian, Romanian and English — talk the language you prefer." }
         }
       },
@@ -142,11 +142,11 @@ window.I18N = {
         },
         q2: {
           title: "How often do I need to file the VAT (BTW) return?",
-          html: "<p>The frequency depends on your company’s turnover:</p><p><strong>Quarterly (per kwartaal)</strong> — the standard option for most entrepreneurs. The return is filed every 3 months.</p><p><strong>Monthly (per maand)</strong> — for high turnover or if required by the tax authority.</p><p><strong>Annually (per jaar)</strong> — if annual VAT is below €1,883, you may file once a year by March 31.</p><p>We will help determine the optimal frequency for your business and handle preparation and filing.</p>"
+          html: "<p>The frequency depends on your company's turnover:</p><p><strong>Quarterly (per kwartaal)</strong> — the standard option for most entrepreneurs. The return is filed every 3 months.</p><p><strong>Monthly (per maand)</strong> — for high turnover or if required by the tax authority.</p><p><strong>Annually (per jaar)</strong> — if annual VAT is below €1,883, you may file once a year by March 31.</p><p>We will handle the preparation and filing of tax returns and ensure everything is submitted on time in compliance with tax authority requirements.</p>"
         },
         q3: {
           title: "Do I need bookkeeping as a ZZP?",
-          html: "<p><strong>Yes, by law you must keep accounting records.</strong></p><p>As a ZZP you must accurately track all income and expenses. This is required for:</p><ul><li>Filing the annual income tax return (IB)</li><li>Quarterly VAT (BTW) returns (if applicable)</li><li>Complying with tax authority requirements</li><li>Controlling your business finances</li></ul><p>We can take care of bookkeeping so you can focus on your business.</p>"
+          html: "<p><strong>Yes, as a ZZP you are required to keep accounting records — but hiring an accountant is not mandatory, you can manage the records yourself. However, it's important that the records are kept correctly and comply with tax authority requirements.</strong></p><p>As a ZZP you must accurately track all income and expenses. This is required for:</p><ul><li>Filing the annual income tax return (IB)</li><li>Quarterly VAT (BTW) returns (if applicable)</li><li>Complying with tax authority requirements</li><li>Controlling your business finances</li></ul><p>We can take care of bookkeeping so you can focus on your business.</p>"
         },
         q4: {
           title: "Do you help with KvK registration?",
@@ -177,10 +177,10 @@ window.I18N = {
 
     aboutPage: {
       founder: {
-        name: "Nadezhda Marian",
-        imgAlt: "Nadezhda Marian — founder of GeniusTax",
-        mission: "My mission is to make tax matters as simple as possible for entrepreneurs, so they have more time for what truly matters — their business.",
-        cta: "My services",
+        name: "Nadejda Marian",
+        imgAlt: "Nadejda Marian — founder of GeniusTax",
+        mission: "Our mission is to make tax matters as simple as possible for entrepreneurs, so they have more time for what truly matters — their business.",
+        cta: "Our services",
         experience: { title: "Experience", bodyHTML: "Accountant since 2014<br>Working in the Netherlands since 2018" },
         services: { title: "Services", bodyHTML: "Tax returns<br>Invoice preparation<br>Payroll (processing)" },
         specialization: { title: "Specialization", bodyHTML: "Accounting and tax support<br>ZZP, VOF, BV, individuals" }
@@ -188,15 +188,15 @@ window.I18N = {
       sections: {
         aboutTitle: "About us",
         missionTitle: "Mission",
-        missionDesc: "My mission is to make tax topics clear and simple for entrepreneurs so you have more time to grow your business.",
+        missionDesc: "Our mission is to make tax topics clear and simple for entrepreneurs so you have more time to grow your business.",
         valuesTitle: "Values",
-        valuesDesc: "Seriousness, transparency and genuine respect for every client are the foundation of my approach. It is important for me not only to solve technical tasks, but also to give confidence.",
+        valuesDesc: "Seriousness, transparency and genuine respect for every client are the foundation of our approach. It is important for us not only to solve technical tasks, but also to give confidence.",
         approachTitle: "Approach",
-        approachDesc: "I explain complex tax things in simple words and bring peace of mind in dealings with the Belastingdienst."
+        approachDesc: "We explain complex tax things in simple words and bring peace of mind in dealings with the Belastingdienst."
       },
-      servicesSection: { title: "My services", desc: "Solutions for entrepreneurs of any size: from freelancers to companies with employees. I will help you choose a package that fits you best.", cta: "Learn more" },
+      servicesSection: { title: "Our services", desc: "Solutions for entrepreneurs of any size: from freelancers to companies with employees. We will help you choose a package that fits you best.", cta: "Learn more" },
       testimonials: {
-        title: "What clients say about me?",
+        title: "What clients say about us?",
         list: [
           { name: "Valerii Agafonov", role: "Company Director", quote: "We switched to GeniusTax last year and immediately noticed the difference: transparent pricing, fast responses and proactive advice. Highly recommend!" },
           { name: "Petr Petrov", role: "Entrepreneur", quote: "I am not a native Dutch speaker, and with GeniusTax the Dutch tax system became clear. Their multilingual support is a huge advantage for entrepreneurs like me." },
@@ -248,7 +248,7 @@ window.I18N = {
     benefits: {
       title: "Почему выбирают нас",
       transparent: { title: "Прозрачные цены", desc: "Фиксированные тарифы, без скрытых платежей — вы всегда знаете, за что платите." },
-      fast: { title: "Быстрые ответы", desc: "Отвечаем в течение 24–48 часов — вовремя поддерживаем ваш бизнес." },
+      fast: { title: "Быстрые ответы", desc: "Отвечаем в течение 24 часов — вовремя поддерживаем ваш бизнес." },
       full: { title: "Полный спектр услуг", desc: "От регистрации компании до бухгалтерии и деклараций — всё в одном месте." },
       languages: { title: "Многоязычная поддержка", desc: "Консультации на русском, румынском и английском языках." }
     },
@@ -335,7 +335,7 @@ window.I18N = {
       why: {
         title: "Почему выбирают нас",
         cards: {
-          fast: { title: "Быстрые ответы", desc: "Отвечаем в течение 24–48 часов — вовремя поддерживаем ваш бизнес." },
+          fast: { title: "Быстрые ответы", desc: "Отвечаем в течение 24 часов — вовремя поддерживаем ваш бизнес." },
           multilingual: { title: "Многоязычная поддержка", desc: "Консультации на русском, румынском и английском языках." }
         }
       },
@@ -347,11 +347,11 @@ window.I18N = {
         },
         q2: {
           title: "Как часто нужно подавать BTW декларацию?",
-          html: "<p>Частота зависит от оборота вашей компании:</p><p><strong>Квартально (per kwartaal)</strong> — стандартный вариант для большинства предпринимателей. Декларация подается раз в 3 месяца.</p><p><strong>Ежемесячно (per maand)</strong> — при высоком обороте или по требованию налоговой службы.</p><p><strong>Ежегодно (per jaar)</strong> — если годовой BTW менее €1.883, можно подавать раз в год до 31 марта.</p><p>Мы поможем определить оптимальную частоту и возьмём подготовку и подачу деклараций на себя.</p>"
+          html: "<p>Частота зависит от оборота вашей компании:</p><p><strong>Квартально (per kwartaal)</strong> — стандартный вариант для большинства предпринимателей. Декларация подается раз в 3 месяца.</p><p><strong>Ежемесячно (per maand)</strong> — при высоком обороте или по требованию налоговой службы.</p><p><strong>Ежегодно (per jaar)</strong> — если годовой BTW менее €1.883, можно подавать раз в год до 31 марта.</p><p>Мы возьмём на себя подготовку и подачу налоговых деклараций, а также проследим, чтобы всё было подано вовремя в соответствии с требованиями налоговой службы.</p>"
         },
         q3: {
           title: "Нужна ли мне бухгалтерия как ZZP?",
-          html: "<p><strong>Да, по закону вы обязаны вести бухгалтерский учёт.</strong></p><p>Как ZZP вы должны аккуратно регистрировать все доходы и расходы. Это необходимо для:</p><ul><li>Подачи годовой налоговой декларации (IB)</li><li>Квартальных BTW деклараций (если применимо)</li><li>Соблюдения требований налоговой службы</li><li>Контроля финансов вашего бизнеса</li></ul><p>Мы возьмём бухгалтерию на себя, чтобы вы сосредоточились на бизнесе.</p>"
+          html: "<p><strong>Да, как ZZP вы обязаны вести бухгалтерский учёт — но нанимать бухгалтера не обязательно, вы можете вести учёт самостоятельно. Однако важно, чтобы он вёлся правильно и соответствовал требованиям налоговой службы.</strong></p><p>Как ZZP вы должны аккуратно регистрировать все доходы и расходы. Это необходимо для:</p><ul><li>Подачи годовой налоговой декларации (IB)</li><li>Квартальных BTW деклараций (если применимо)</li><li>Соблюдения требований налоговой службы</li><li>Контроля финансов вашего бизнеса</li></ul><p>Мы возьмём бухгалтерию на себя, чтобы вы сосредоточились на бизнесе.</p>"
         },
         q4: {
           title: "Помогаете ли вы с регистрацией в KvK?",
@@ -384,8 +384,8 @@ window.I18N = {
       founder: {
         name: "Надежда Мариан",
         imgAlt: "Надежда Мариан — основательница GeniusTax",
-        mission: "Моя миссия – сделать налоговые вопросы максимально простыми для предпринимателей, чтобы у них оставалось больше времени на действительно важное – свой бизнес.",
-        cta: "Мои услуги",
+        mission: "Наша миссия – сделать налоговые вопросы максимально простыми для предпринимателей, чтобы у них оставалось больше времени на действительно важное – свой бизнес.",
+        cta: "Наши услуги",
         experience: { title: "Опыт работы", bodyHTML: "Бухгалтер с 2014 года<br>Работаю в Нидерландах с 2018 года" },
         services: { title: "Услуги", bodyHTML: "Декларации<br>Подготовка счетов-фактур<br>Ведение зарплат (Payroll)" },
         specialization: { title: "Специализация", bodyHTML: "Бухгалтерское и налоговое сопровождение<br>ZZP, VOF, BV, физические лица" }
@@ -393,15 +393,15 @@ window.I18N = {
       sections: {
         aboutTitle: "О нас",
         missionTitle: "Миссия",
-        missionDesc: "Моя миссия — сделать налоговые вопросы максимально простыми для предпринимателей, чтобы у вас оставалось больше времени на важное — развитие бизнеса.",
+        missionDesc: "Наша миссия — сделать налоговые вопросы максимально простыми для предпринимателей, чтобы у вас оставалось больше времени на важное — развитие бизнеса.",
         valuesTitle: "Ценности",
-        valuesDesc: "Серьёзность, прозрачность и уважение к каждому клиенту — основа моего подхода. Важно не только решать технические задачи, но и дарить уверенность.",
+        valuesDesc: "Серьёзность, прозрачность и уважение к каждому клиенту — основа нашего подхода. Для нас важно не только решать технические задачи, но и дарить уверенность.",
         approachTitle: "Подход",
-        approachDesc: "Объясняю сложные налоговые вещи простыми словами и обеспечиваю спокойствие в отношениях с Belastingdienst."
+        approachDesc: "Мы объясняем сложные налоговые вещи простыми словами и обеспечиваем спокойствие в отношениях с Belastingdienst."
       },
-      servicesSection: { title: "Мои услуги", desc: "Решения для предпринимателей любого масштаба: от фрилансеров до компаний с сотрудниками. Подберу пакет, который подходит именно вам.", cta: "Узнать больше" },
+      servicesSection: { title: "Наши услуги", desc: "Решения для предпринимателей любого масштаба: от фрилансеров до компаний с сотрудниками. Мы подберём пакет, который подходит именно вам.", cta: "Узнать больше" },
       testimonials: {
-        title: "Что говорят обо мне?",
+        title: "Что говорят о нас?",
         list: [
           { name: "Валерий Агафонов", role: "Директор компании", quote: "Мы перешли на GeniusTax в прошлом году и сразу заметили разницу: прозрачные цены, быстрые ответы и проактивные советы. Очень рекомендую!" },
           { name: "Пётр Петров", role: "Предприниматель", quote: "Я не носитель нидерландского языка, и с GeniusTax система налогов в Нидерландах стала понятной. Их многоязычная поддержка — огромное преимущество для таких предпринимателей, как я." },
@@ -413,8 +413,8 @@ window.I18N = {
 
   ro: {
     meta: {
-      title: "GeniusTax — contabilitate pentru antreprenori în Țările de Jos",
-      ogTitle: "GeniusTax — contabilitate pentru antreprenori în Țările de Jos",
+      title: "GeniusTax — acordă servicii contabile pentru antreprenori în Țările de Jos",
+      ogTitle: "GeniusTax — acordă servicii contabile pentru antreprenori în Țările de Jos",
       ogDescription: "Contabilitate, declarații fiscale și consultanță. Prețuri transparente, fără stres, mereu la timp."
     },
     nav: { home: "Acasă", services: "Servicii", about: "Despre", contact: "Contact" },
@@ -453,14 +453,14 @@ window.I18N = {
     benefits: {
       title: "De ce să ne alegi",
       transparent: { title: "Prețuri transparente", desc: "Tarife fixe, fără costuri ascunse — știi mereu pentru ce plătești." },
-      fast: { title: "Răspuns rapid", desc: "Răspundem în 24–48 ore — suport la timp pentru afacerea ta." },
+      fast: { title: "Răspuns rapid", desc: "Răspundem în 24 ore — suport la timp pentru afacerea ta." },
       full: { title: "Gama completă de servicii", desc: "De la înființarea firmei la contabilitate și declarații — totul într-un singur loc." },
       languages: { title: "Suport multilingv", desc: "Consultații în rusă, română și engleză — alege limba preferată." }
     },
 
     testimonials: { title: "Ce spun clienții" },
     home: {
-      introHTML: "<i>GeniusTax — contabilitate pentru antreprenori în Țările de Jos. Pregătim și depunem declarațiile fiscale, ținem contabilitatea și consultăm în română, rusă și engleză. Prețuri transparente, fără stres și mereu la timp.</i>",
+      introHTML: "<i>GeniusTax — acordă servicii contabile pentru antreprenori în Țările de Jos. Pregătim și depunem declarațiile fiscale, ținem contabilitatea și consultăm în română, rusă și engleză. Prețuri transparente, fără stres și mereu la timp.</i>",
       question: "<i>Confuz cu taxele și raportarea?</i>",
       answer: "<i>Ne ocupăm noi de cifre, tu de afaceri!</i>",
       learnMore: "Află mai mult"
@@ -540,7 +540,7 @@ window.I18N = {
       why: {
         title: "De ce să ne alegi",
         cards: {
-          fast: { title: "Răspuns rapid", desc: "Răspundem în 24–48 ore — suport la timp pentru afacerea ta." },
+          fast: { title: "Răspuns rapid", desc: "Răspundem în 24 ore — suport la timp pentru afacerea ta." },
           multilingual: { title: "Suport multilingv", desc: "Consultații în rusă, română și engleză — alege limba preferată." }
         }
       },
@@ -552,11 +552,11 @@ window.I18N = {
         },
         q2: {
           title: "Cât de des trebuie depusă declarația BTW?",
-          html: "<p>Frecvența depinde de cifra de afaceri:</p><p><strong>Trimestrial (per kwartaal)</strong> — opțiunea standard pentru majoritatea antreprenorilor. Depunere la fiecare 3 luni.</p><p><strong>Lunar (per maand)</strong> — la cifră de afaceri mare sau la cererea autorității fiscale.</p><p><strong>Anual (per jaar)</strong> — dacă BTW anual este sub €1.883, se poate depune o dată pe an până la 31 martie.</p><p>Te ajutăm să alegi frecvența optimă și ne ocupăm de pregătire și depunere.</p>"
+          html: "<p>Frecvența depinde de cifra de afaceri:</p><p><strong>Trimestrial (per kwartaal)</strong> — opțiunea standard pentru majoritatea antreprenorilor. Depunere la fiecare 3 luni.</p><p><strong>Lunar (per maand)</strong> — la cifră de afaceri mare sau la cererea autorității fiscale.</p><p><strong>Anual (per jaar)</strong> — dacă BTW anual este sub €1.883, se poate depune o dată pe an până la 31 martie.</p><p>Ne ocupăm de pregătirea și depunerea declarațiilor fiscale și ne asigurăm că totul este depus la timp în conformitate cu cerințele autorității fiscale.</p>"
         },
         q3: {
           title: "Am nevoie de contabilitate ca ZZP?",
-          html: "<p><strong>Da, prin lege trebuie să păstrezi evidența contabilă.</strong></p><p>Ca ZZP trebuie să înregistrezi corect toate veniturile și cheltuielile. Este necesar pentru:</p><ul><li>Depunerea declarației anuale de impozit pe venit (IB)</li><li>Declarații trimestriale BTW (dacă se aplică)</li><li>Respectarea cerințelor autorității fiscale</li><li>Controlul finanțelor afacerii</li></ul><p>Noi ne ocupăm de contabilitate ca tu să te concentrezi pe afaceri.</p>"
+          html: "<p><strong>Da, ca ZZP trebuie să păstrezi evidența contabilă — dar angajarea unui contabil nu este obligatorie, poți ține evidența singur. Însă este important ca aceasta să fie ținută corect și să respecte cerințele autorității fiscale.</strong></p><p>Ca ZZP trebuie să înregistrezi corect toate veniturile și cheltuielile. Este necesar pentru:</p><ul><li>Depunerea declarației anuale de impozit pe venit (IB)</li><li>Declarații trimestriale BTW (dacă se aplică)</li><li>Respectarea cerințelor autorității fiscale</li><li>Controlul finanțelor afacerii</li></ul><p>Noi ne ocupăm de contabilitate ca tu să te concentrezi pe afaceri.</p>"
         },
         q4: {
           title: "Ajutați cu înregistrarea la KvK?",
@@ -587,10 +587,10 @@ window.I18N = {
 
     aboutPage: {
       founder: {
-        name: "Nadezhda Marian",
-        imgAlt: "Nadezhda Marian — fondatoarea GeniusTax",
-        mission: "Misiunea mea este să simplific subiectele fiscale pentru antreprenori, ca să rămână mai mult timp pentru ceea ce contează cu adevărat — afacerea lor.",
-        cta: "Serviciile mele",
+        name: "Nadejda Marian",
+        imgAlt: "Nadejda Marian — fondatoarea GeniusTax",
+        mission: "Misiunea noastră este să simplificăm subiectele fiscale pentru antreprenori, ca să rămână mai mult timp pentru ceea ce contează cu adevărat — afacerea lor.",
+        cta: "Serviciile noastre",
         experience: { title: "Experiență", bodyHTML: "Contabil din 2014<br>Lucrez în Țările de Jos din 2018" },
         services: { title: "Servicii", bodyHTML: "Declarații fiscale<br>Pregătire facturi<br>Payroll (salarizare)" },
         specialization: { title: "Specializare", bodyHTML: "Suport contabil și fiscal<br>ZZP, VOF, BV, persoane fizice" }
@@ -598,15 +598,15 @@ window.I18N = {
       sections: {
         aboutTitle: "Despre noi",
         missionTitle: "Misiune",
-        missionDesc: "Misiunea mea este să simplific fiscalitatea pentru antreprenori, ca să aveți mai mult timp pentru dezvoltarea afacerii.",
+        missionDesc: "Misiunea noastră este să simplificăm fiscalitatea pentru antreprenori, ca să aveți mai mult timp pentru dezvoltarea afacerii.",
         valuesTitle: "Valori",
-        valuesDesc: "Seriozitate, transparență și respect autentic pentru fiecare client — baza abordării mele.",
+        valuesDesc: "Seriozitate, transparență și respect autentic pentru fiecare client — baza abordării noastre.",
         approachTitle: "Abordare",
-        approachDesc: "Explic lucrurile fiscale complexe pe înțelesul tuturor și aduc liniște în relația cu Belastingdienst."
+        approachDesc: "Explicăm lucrurile fiscale complexe pe înțelesul tuturor și aducem liniște în relația cu Belastingdienst."
       },
-      servicesSection: { title: "Serviciile mele", desc: "Soluții pentru antreprenori de orice dimensiune: de la freelanceri la companii cu angajați. Aleg pachetul potrivit pentru voi.", cta: "Află mai mult" },
+      servicesSection: { title: "Serviciile noastre", desc: "Soluții pentru antreprenori de orice dimensiune: de la freelanceri la companii cu angajați. Alegem pachetul potrivit pentru voi.", cta: "Află mai mult" },
       testimonials: {
-        title: "Ce spun clienții despre mine?",
+        title: "Ce spun clienții despre noi?",
         list: [
           { name: "Valerii Agafonov", role: "Director companie", quote: "Am trecut la GeniusTax anul trecut și am observat imediat diferența: prețuri transparente, răspunsuri rapide și sfaturi proactive. Recomand cu căldură!" },
           { name: "Petr Petrov", role: "Antreprenor", quote: "Nu sunt vorbitor nativ de olandeză, iar cu GeniusTax sistemul fiscal din Olanda a devenit clar. Suportul lor multilingv este un mare avantaj pentru antreprenori ca mine." },
