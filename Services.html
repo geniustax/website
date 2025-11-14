@@ -782,6 +782,69 @@
     })();
     </script>
 
+    <script>
+    // Auto-open accordion based on URL hash
+    (function(){
+      function autoOpenAccordion() {
+        try {
+          var hash = window.location.hash;
+          if (hash && hash.length > 1) {
+            var targetId = hash.substring(1); // Remove the # symbol
+            var targetElement = document.getElementById(targetId);
+            
+            if (targetElement && targetElement.classList.contains('u-accordion-item')) {
+              // Check if we're on mobile (since accordions work on mobile)
+              function isMobile() {
+                return window.innerWidth <= 939;
+              }
+              
+              if (isMobile()) {
+                // Open the accordion
+                targetElement.classList.add('active');
+                
+                // Scroll to the element after a short delay to ensure it's opened
+                setTimeout(function() {
+                  var headerOffset = 80; // Account for fixed header
+                  var elementPosition = targetElement.getBoundingClientRect().top;
+                  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                  
+                  window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                  });
+                }, 300);
+              } else {
+                // On desktop, just scroll to the element
+                setTimeout(function() {
+                  var headerOffset = 80;
+                  var elementPosition = targetElement.getBoundingClientRect().top;
+                  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                  
+                  window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                  });
+                }, 100);
+              }
+            }
+          }
+        } catch(e) {
+          console.log('Error in autoOpenAccordion:', e);
+        }
+      }
+
+      // Run when page loads
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', autoOpenAccordion);
+      } else {
+        autoOpenAccordion();
+      }
+      
+      // Also run when hash changes (if user clicks another anchor)
+      window.addEventListener('hashchange', autoOpenAccordion);
+    })();
+    </script>
+
   <!-- WhatsApp Floating Button -->
   <a href="https://api.whatsapp.com/send?phone=31644492189&text=Здравствуйте!%20Интересуют%20ваши%20бухгалтерские%20услуги"
      class="whatsapp-float"

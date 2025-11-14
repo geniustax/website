@@ -2548,3 +2548,99 @@
 .u-footer h5.u-block-header { margin: 0 0 4px !important; }
 .u-footer .u-line-1 { margin: 6px 0 4px !important; }
 .u-footer .u-btn-3, .u-footer .u-btn-4 { margin-top: 2px !important; }
+
+/* About Us section spacing and layout improvements */
+.u-section-3 {
+  padding-top: 40px !important; /* Reduce top spacing */
+  margin-top: 0 !important;
+}
+
+.u-section-3 .u-sheet-1 {
+  min-height: 350px !important; /* Reduce overall height */
+}
+
+.u-section-3 .u-layout-wrap-1 {
+  margin: 20px 0 !important; /* Reduce margins around layout */
+}
+
+.u-section-3 .u-text-1 {
+  margin: 20px 20px 0 0 !important; /* Fix excessive right margin and negative left */
+}
+
+.u-section-3 .u-text-2 {
+  margin: 20px 20px 0 0 !important; /* Reduce excessive right margin */
+}
+
+.u-section-3 .u-container-layout-1 {
+  padding: 25px 20px !important; /* More balanced padding */
+}
+
+.u-section-3 .u-container-layout-2 {
+  padding: 25px 20px !important; /* Match left side padding */
+}
+
+/* Two-column 50/50 layout for About Us section */
+.u-section-3 .u-layout-row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+
+.u-section-3 .u-size-30-xxl {
+  flex: 0 0 50% !important; /* 50% width for both columns */
+  max-width: 50% !important;
+}
+
+/* Better balance between text and stats blocks */
+.u-section-3 .u-layout-cell-1,
+.u-section-3 .u-layout-cell-2 {
+  min-height: 300px !important;
+  height: auto !important;
+}
+
+/* Mobile improvements for About Us section */
+@media (max-width: 991px) {
+  .u-section-3 .u-size-30-xxl {
+    flex: 0 0 100% !important; /* Stack on mobile/tablet */
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-3 {
+    padding-top: 20px !important;
+  }
+  
+  .u-section-3 .u-sheet-1 {
+    min-height: 300px !important;
+  }
+  
+  .u-section-3 .u-layout-wrap-1 {
+    margin: 10px 0 !important; /* Reduce mobile margins */
+  }
+  
+  .u-section-3 .u-text-1,
+  .u-section-3 .u-text-2 {
+    margin: 15px 10px 0 0 !important; /* Tighter mobile spacing */
+  }
+  
+  .u-section-3 .u-container-layout-1,
+  .u-section-3 .u-container-layout-2 {
+    padding: 20px 15px !important; /* Optimized mobile padding */
+  }
+}
+
+/* Center CTA button on mobile devices */
+@media (max-width: 767px) {
+  /* Center consultation button on mobile */
+  .u-btn[data-i18n="cta.consult"].u-align-left {
+    text-align: left !important;
+    margin: 20px 0 !important;
+    display: block !important;
+    max-width: 320px !important; /* Limit width on mobile */
+  }
+  
+  /* Ensure button text is centered */
+  .u-btn[data-i18n="cta.consult"] {
+    text-align: center !important;
+  }
+}
