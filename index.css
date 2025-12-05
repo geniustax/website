@@ -271,7 +271,7 @@
     width: 200px;
     height: 320px;
     object-fit: cover;
-    object-position: center center;
+    object-position: 40% center;
     margin-top: -144px;
     margin-bottom: -21px;
     margin-left: 0;
