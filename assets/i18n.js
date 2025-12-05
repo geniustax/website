@@ -438,7 +438,7 @@ window.I18N = {
       registration: { title: "Înregistrare", desc: "Asistență pentru deschiderea companiei" },
       reporting: { title: "Raportare", desc: "Situații anuale și documente financiare" },
       consulting: { title: "Consultanță", desc: "Consiliere personală privind contabilitatea și taxele." },
-      taxes: { title: "Impozite", desc: "Declarații BTW, IB, VPB — la timp și corect." },
+      taxes: { title: "Impozite", desc: "Declarații TVA, IB, VPB — la timp și corect." },
       payroll: { title: "Payroll", desc: "Salarizare și raportare" }
     },
 
@@ -497,7 +497,7 @@ window.I18N = {
           title: "Pachet Basic",
           desc: "Pentru firme fără angajați și volum mic de documente",
           list: [
-            "Declarații trimestriale și anuale (BTW, IB)",
+            "Declarații trimestriale și anuale (TVA, IB)",
             "Pregătire facturi",
             "Consultanță fiscală de bază",
             "Asistență prin email"
@@ -509,7 +509,7 @@ window.I18N = {
           list: [
             "Contabilitate completă (ZZP, VOF, BV)",
             "Payroll — salarizare (dacă există angajați)",
-            "Declarații trimestriale și anuale (BTW, IB, VPB)",
+            "Declarații trimestriale și anuale (TVA, IB, VPB)",
             "Rapoarte financiare",
             "Consultanțe periodice",
             "Asistență prioritară"
@@ -530,7 +530,7 @@ window.I18N = {
           desc: "Servicii la cerere, fără abonament lunar",
           includes: "Servicii disponibile:",
           list: [
-            "Pregătirea și depunerea declarațiilor trimestriale/anuale (BTW, IB, VPB)",
+            "Pregătirea și depunerea declarațiilor trimestriale/anuale (TVA, IB, VPB)",
             "Jaaropgave / Jaarrekening — documente și rapoarte anuale",
             "Formulare KvK — deschidere ZZP, extras, modificări în registru",
             "Consultanță pe o întrebare contabilă sau fiscală concretă",
@@ -554,12 +554,12 @@ window.I18N = {
           html: "<p><strong>Pachetul Basic</strong> include declarații trimestriale și anuale, pregătire facturi și consultanță de bază.</p><p><strong>Pachetul Standard</strong> înseamnă contabilitate completă, salarizare (dacă există angajați), declarații trimestriale și anuale, rapoarte financiare și consultanțe periodice.</p><p><strong>Pachetul Premium</strong> include tot din Standard plus soluții personalizate, consultanță aprofundată, planificare strategică și reprezentare la autoritățile fiscale.</p><p>Oferim și <strong>servicii punctuale</strong> fără abonament lunar — declarații unice, consultații, înregistrare la KvK și alte servicii la cerere.</p>"
         },
         q2: {
-          title: "Cât de des trebuie depusă declarația BTW?",
-          html: "<p>Frecvența depinde de cifra de afaceri:</p><p><strong>Trimestrial (per kwartaal)</strong> — opțiunea standard pentru majoritatea antreprenorilor. Depunere la fiecare 3 luni.</p><p><strong>Lunar (per maand)</strong> — la cifră de afaceri mare sau la cererea autorităților fiscale.</p><p><strong>Anual (per jaar)</strong> — dacă BTW anual este sub €1.883, se poate depune o dată pe an până la 31 martie.</p><p>Ne ocupăm de pregătirea și depunerea declarațiilor fiscale și ne asigurăm că totul este depus la timp în conformitate cu cerințele autorităților fiscale.</p>"
+          title: "Cât de des trebuie depusă declarația TVA?",
+          html: "<p>Frecvența depinde de cifra de afaceri:</p><p><strong>Trimestrial (per kwartaal)</strong> — opțiunea standard pentru majoritatea antreprenorilor. Depunere la fiecare 3 luni.</p><p><strong>Lunar (per maand)</strong> — la cifră de afaceri mare sau la cererea autorităților fiscale.</p><p><strong>Anual (per jaar)</strong> — dacă TVA anual este sub €1.883, se poate depune o dată pe an până la 31 martie.</p><p>Ne ocupăm de pregătirea și depunerea declarațiilor fiscale și ne asigurăm că totul este depus la timp în conformitate cu cerințele autorităților fiscale.</p>"
         },
         q3: {
           title: "Am nevoie de contabilitate ca ZZP?",
-          html: "<p><strong>Da, ca ZZP trebuie să păstrezi evidența contabilă — dar angajarea unui contabil nu este obligatorie, poți ține evidența singur. Însă este important ca aceasta să fie ținută corect și să respecte cerințele autorităților fiscale.</strong></p><p>Ca ZZP trebuie să înregistrezi corect toate veniturile și cheltuielile. Este necesar pentru:</p><ul><li>Depunerea declarației anuale de impozit pe venit (IB)</li><li>Declarații trimestriale BTW (dacă se aplică)</li><li>Respectarea cerințelor autorităților fiscale</li><li>Controlul finanțelor afacerii</li></ul><p>Noi ne ocupăm de contabilitate ca tu să te concentrezi pe afaceri.</p>"
+          html: "<p><strong>Da, ca ZZP trebuie să păstrezi evidența contabilă — dar angajarea unui contabil nu este obligatorie, poți ține evidența singur. Însă este important ca aceasta să fie ținută corect și să respecte cerințele autorităților fiscale.</strong></p><p>Ca ZZP trebuie să înregistrezi corect toate veniturile și cheltuielile. Este necesar pentru:</p><ul><li>Depunerea declarației anuale de impozit pe venit (IB)</li><li>Declarații trimestriale TVA (dacă se aplică)</li><li>Respectarea cerințelor autorităților fiscale</li><li>Controlul finanțelor afacerii</li></ul><p>Noi ne ocupăm de contabilitate ca tu să te concentrezi pe afaceri.</p>"
         },
         q4: {
           title: "Ajutați cu înregistrarea la KvK?",
@@ -571,7 +571,7 @@ window.I18N = {
         },
         q6: {
           title: "Pot obține o consultație punctuală?",
-          html: "<p><strong>Da, oferim servicii punctuale fără abonament lunar.</strong></p><p>Poți comanda servicii punctuale:</p><ul><li>Consultanță pe o întrebare contabilă sau fiscală</li><li>Declarație unică (BTW, IB, VPB)</li><li>Pregătire Jaaropgave / Jaarrekening</li><li>Verificarea contabilității existente</li><li>Alte servicii la cerere</li></ul><p>Contactează-ne pentru un ofertă adaptată.</p>"
+          html: "<p><strong>Da, oferim servicii punctuale fără abonament lunar.</strong></p><p>Poți comanda servicii punctuale:</p><ul><li>Consultanță pe o întrebare contabilă sau fiscală</li><li>Declarație unică (TVA, IB, VPB)</li><li>Pregătire Jaaropgave / Jaarrekening</li><li>Verificarea contabilității existente</li><li>Alte servicii la cerere</li></ul><p>Contactează-ne pentru un ofertă adaptată.</p>"
         },
         q7: {
           title: "Ce fac dacă am primit o amendă mare (ex., €5.000) pentru o declarație nedepusă?",
