@@ -84,7 +84,7 @@ html, body {
 }
 
  .u-section-1 {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/photo-1518135714426-c18f5ffb6f4d.jpeg');
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/photos/office-workspace-laptop-tulips.jpeg');
   background-position: 50% 50%;
 }
 
@@ -434,7 +434,7 @@ html, body {
 
 .u-section-3 .u-image-1 {
   min-height: 616px;
-  background-image: url("images/pexels-sedat-karaer-1447375111-26648888.jpg");
+  background-image: url("images/photos/office-workspace-laptop-tulips.jpeg");
   background-position: 50% 50%;
 }
 
