@@ -559,7 +559,7 @@ window.I18N = {
         },
         q5: {
           title: "Pot obține o consultație punctuală?",
-          html: "<p><strong>Da, oferim servicii punctuale fără abonament lunar.</strong></p><p>Poți comanda servicii punctuale:</p><ul><li>Consultanță pe o întrebare contabilă sau fiscală</li><li>Declarație unică (TVA, IB, VPB)</li><li>Pregătire Jaaropgave / Jaarrekening</li><li>Verificarea contabilității existente</li><li>Alte servicii la cerere</li></ul><p>Contactează-ne pentru un ofertă adaptată.</p>"
+          html: "<p><strong>Da, oferim servicii punctuale fără abonament lunar.</strong></p><p>Poți comanda servicii punctuale:</p><ul><li>Consultanță pe o întrebare contabilă sau fiscală</li><li>Declarație unică (TVA, IB, VPB)</li><li>Pregătire Jaaropgave / Jaarrekening</li><li>Verificarea contabilității existente</li><li>Alte servicii la cerere</li></ul><p>Contactează-ne pentru o ofertă adaptată.</p>"
         },
         q6: {
           title: "Ce fac dacă am primit o amendă mare (ex., €5.000) pentru o declarație nedepusă?",
