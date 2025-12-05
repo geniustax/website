@@ -555,7 +555,7 @@ window.I18N = {
         },
         q4: {
           title: "Lucrați cu companii care au angajați?",
-          html: "<p><strong>Da, oferim servicii complete de Payroll.</strong></p><p>Pentru companii cu angajați oferim:</p><ul><li>Procesare salarii (loonheffing)</li><li>Calcul salarii și taxe</li><li>Pregătire și depunere declarații de taxe salariale</li><li>Solicitare număr de taxe salariale (loonheffingsnummer)</li><li>Pregătire situații anuale (jaaropgave)</li></ul><p>Payroll este inclus în pachetele Standard și Premium când există angajați.</p>"
+          html: "<p><strong>Da, oferim servicii complete de Payroll.</strong></p><p>Pentru companii cu angajați oferim:</p><ul><li>Procesarea salariilor și a impozitelor aferente (loonheffing)</li><li>Calculul salariilor, contribuțiilor sociale și a taxelor</li><li>Pregătirea și depunerea declarațiilor salariale către autoritățile fiscale</li><li>Obținerea numărului de taxe salariale (loonheffingsnummer)</li><li>Întocmirea situațiilor anuale pentru angajați (jaaropgave)</li></ul><p>Payroll este inclus în pachetele Standard și Premium când există angajați.</p>"
         },
         q5: {
           title: "Pot obține o consultație punctuală?",
