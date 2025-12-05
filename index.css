@@ -131,60 +131,33 @@
   box-shadow: 0 20px 60px rgba(0, 151, 167, 0.15);
   position: relative;
   z-index: 2;
+  transition: all 0.3s ease;
+  border: 4px solid rgba(255, 255, 255, 0.8);
   animation-timing-function: ease-in-out;
   --animation-custom_in-translate_x: 0px;
   --animation-custom_in-translate_y: 0px;
   --animation-custom_in-opacity: 0;
   --animation-custom_in-rotate: 0deg;
   --animation-custom_in-scale: 1;
-  margin: -454px auto 0 21px;
+  margin: -400px auto 0;
 }
 
 .u-section-1 .u-shape-1 {
-  width: 450px;
-  height: 650px;
-  background: linear-gradient(135deg, #0097a7 0%, #5de9f8 100%);
-  border-radius: 60px 20px 60px 20px;
+  width: 400px;
+  height: 600px;
+  background: linear-gradient(135deg, #0097a7 0%, #00bcd4 100%);
+  border-radius: 30px;
   position: absolute;
   z-index: 1;
-  transform: rotate(-5deg);
-  opacity: 0.9;
-  margin-top: -200px;
-  margin-right: 0;
-  margin-left: 100px;
+  transform: rotate(-3deg);
+  opacity: 0.15;
+  margin: -350px auto 0;
 }
 
-/* Additional geometric elements */
-.u-section-1 .u-layout-cell-2::before {
-  content: '';
-  position: absolute;
-  top: 10%;
-  right: -5%;
-  width: 120px;
-  height: 120px;
-  background: linear-gradient(45deg, #ffc900, #ffeb3b);
-  border-radius: 50% 20% 50% 20%;
-  opacity: 0.8;
-  z-index: 0;
-  animation: float 6s ease-in-out infinite;
-}
-
-.u-section-1 .u-layout-cell-2::after {
-  content: '';
-  position: absolute;
-  bottom: 10%;
-  left: -10%;
-  width: 80px;
-  height: 80px;
-  background: rgba(255, 201, 0, 0.6);
-  border-radius: 20px;
-  transform: rotate(45deg);
-  z-index: 0;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-20px) rotate(10deg); }
+/* Hover effect for professional image */
+.u-section-1 .u-image-1:hover {
+  transform: scale(1.02);
+  box-shadow: 0 25px 80px rgba(0, 151, 167, 0.2);
 }
 
 @media (max-width: 1199px) {
