@@ -147,7 +147,7 @@ window.I18N = {
         },
         q3: {
           title: "Do you help with KvK registration?",
-          html: "<p><strong>Yes, we provide full support for company registration.</strong></p><p>Our services include:</p><ul><li>Consultation on choosing a legal form (ZZP, VOF, BV)</li><li>Preparation of all required documents</li><li>Registration with the Chamber of Commerce (KvK)</li><li>Requesting the KvK extract (uitreksel)</li><li>Assistance with registration changes</li></ul><p>We guide you through the process in your language.</p>"
+          html: "<p><strong>Yes, we provide full support for company registration.</strong></p><p>Our services include:</p><ul><li>Consultation on choosing a legal form (ZZP, VOF, BV)</li><li>Preparation of all required documents</li><li>Registration with the Chamber of Commerce (KvK)</li><li>Requesting the KvK extract (uittreksel)</li><li>Assistance with registration changes</li></ul><p>We guide you through the process in your language.</p>"
         },
         q4: {
           title: "Do you work with companies that have employees?",
@@ -322,7 +322,7 @@ window.I18N = {
           list: [
             "Подготовка и подача квартальной/годовой декларации (BTW, IB, VPB)",
             "Jaaropgave / Jaarrekening — годовые отчёты и фин. документы",
-            "Формы KvK — открытие ZZP, запрос uitreksel, изменения в регистрации",
+            "Формы KvK — открытие ZZP, запрос uittreksel, изменения в регистрации",
             "Консультация по конкретному бухгалтерскому или налоговому вопросу",
             "Проверка существующей бухгалтерии",
             "Другие услуги по запросу"
@@ -349,7 +349,7 @@ window.I18N = {
         },
         q3: {
           title: "Помогаете ли вы с регистрацией в KvK?",
-          html: "<p><strong>Да, мы предоставляем полное сопровождение при регистрации компании.</strong></p><p>Наши услуги включают:</p><ul><li>Консультацию по выбору правовой формы (ZZP, VOF, BV)</li><li>Подготовку необходимых документов</li><li>Регистрацию в Торговой палате (KvK)</li><li>Запрос uitreksel (выписки из KvK)</li><li>Помощь с изменениями в регистрации</li></ul><p>Проведём вас через весь процесс на вашем языке.</p>"
+          html: "<p><strong>Да, мы предоставляем полное сопровождение при регистрации компании.</strong></p><p>Наши услуги включают:</p><ul><li>Консультацию по выбору правовой формы (ZZP, VOF, BV)</li><li>Подготовку необходимых документов</li><li>Регистрацию в Торговой палате (KvK)</li><li>Запрос uittreksel (выписки из KvK)</li><li>Помощь с изменениями в регистрации</li></ul><p>Проведём вас через весь процесс на вашем языке.</p>"
         },
         q4: {
           title: "Работаете ли вы с компаниями с сотрудниками?",
@@ -551,7 +551,7 @@ window.I18N = {
         },
         q3: {
           title: "Ajutați cu înregistrarea la KvK?",
-          html: "<p><strong>Da, oferim suport complet pentru înregistrarea firmei.</strong></p><p>Serviciile noastre includ:</p><ul><li>Consultanță pentru forma juridică (ZZP, VOF, BV)</li><li>Pregătirea documentelor necesare</li><li>Înregistrare la Camera de Comerț (KvK)</li><li>Solicitare extras KvK (uitreksel)</li><li>Asistență pentru modificări în registru</li></ul><p>Te ghidăm în limba ta.</p>"
+          html: "<p><strong>Da, oferim suport complet pentru înregistrarea firmei.</strong></p><p>Serviciile noastre includ:</p><ul><li>Consultanță pentru forma juridică (ZZP, VOF, BV)</li><li>Pregătirea documentelor necesare</li><li>Înregistrare la Camera de Comerț (KvK)</li><li>Solicitare extras KvK (uittreksel)</li><li>Asistență pentru modificări în registru</li></ul><p>Te ghidăm în limba ta.</p>"
         },
         q4: {
           title: "Lucrați cu companii care au angajați?",
