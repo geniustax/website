@@ -130,6 +130,7 @@ window.I18N = {
       why: {
         title: "Why choose us",
         cards: {
+          transparent: { title: "Transparent prices", desc: "No hidden fees or extra commissions. You know exactly what you're paying for." },
           fast: { title: "Fast response", desc: "We answer within 24 hours — timely support for your business." },
           multilingual: { title: "Multilingual support", desc: "Consultations in Russian, Romanian and English — talk the language you prefer." }
         }
@@ -335,6 +336,7 @@ window.I18N = {
       why: {
         title: "Почему выбирают нас",
         cards: {
+          transparent: { title: "Прозрачные цены", desc: "Никаких скрытых платежей и дополнительных комиссий. Вы точно знаете, за что платите." },
           fast: { title: "Быстрые ответы", desc: "Отвечаем в течение 24 часов — вовремя поддерживаем ваш бизнес." },
           multilingual: { title: "Многоязычная поддержка", desc: "Консультации на русском, румынском и английском языках." }
         }
@@ -540,6 +542,7 @@ window.I18N = {
       why: {
         title: "De ce să ne alegi",
         cards: {
+          transparent: { title: "Prețuri transparente", desc: "Fără taxe ascunse sau comisioane suplimentare. Știi exact pentru ce plătești." },
           fast: { title: "Răspuns rapid", desc: "Răspundem în 24 ore — suport la timp pentru afacerea ta." },
           multilingual: { title: "Suport multilingv", desc: "Consultații în rusă, română și engleză — alege limba preferată." }
         }
