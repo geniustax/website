@@ -570,8 +570,8 @@ window.I18N = {
           html: "<p><strong>Poți deține mai multe companii, cum ar fi VOF sau BV, însă nu poți avea două entități ZZP în același timp. În Țările de Jos, toate activitățile desfășurate ca ZZP sunt considerate parte din aceeași activitate antreprenorială.</strong></p><p>Totuși, poți combina forme diferite (de ex., ZZP și fondator BV).</p><p>Te ajutăm să separi corect activitățile și taxele, legal și avantajos.</p>"
         },
         q8: {
-          title: "Trebuie să plătesc taxe dacă firma este temporar inactivă?",
-          html: "<p><strong>Da, chiar fără venit trebuie depuse declarații zero. Astfel confirmi că firma este activă și eviți amenzile.</strong></p><p>Pregătim declarațiile zero și notificăm autoritățile fiscale în numele tău.</p>"
+          title: "Trebuie să depun declarații dacă firma mea este temporar inactivă?",
+          html: "<p><strong>Da. Chiar dacă firma nu are activitate sau venit, autoritățile fiscale solicită depunerea declarațiilor zero. Acest lucru confirmă că firma este încă activă în registre și te ajută să eviți amenzile pentru declarații nedepuse.</strong></p><p>Pregătim declarațiile zero și notificăm autoritățile fiscale în numele tău.</p>"
         }
       }
     },
