@@ -176,7 +176,7 @@ window.I18N = {
       founder: {
         name: "Nadejda Marian",
         imgAlt: "Nadejda Marian — founder of GeniusTax",
-        mission: "Our mission is to make tax matters as simple as possible for entrepreneurs, so they have more time for what truly matters — their business.",
+        mission: "I'm Nadejda Marian, an accountant with over 10 years of experience, specializing in Dutch taxation and founder of GeniusTax. I help entrepreneurs properly manage their tax obligations, understand Dutch regulations, and make wise financial decisions for their business. My approach is practical, clear, and results-oriented — I explain in understandable terms, find solutions, and ensure each client receives personalized guidance, not just numbers and forms.",
         cta: "Our services",
         experience: { title: "Experience", bodyHTML: "Accountant since 2014<br>Working in the Netherlands since 2018" },
         services: { title: "Services", bodyHTML: "Tax returns<br>Invoice preparation<br>Payroll (processing)" },
@@ -378,7 +378,7 @@ window.I18N = {
       founder: {
         name: "Надежда Мариан",
         imgAlt: "Надежда Мариан — основательница GeniusTax",
-        mission: "Наша миссия – сделать налоговые вопросы максимально простыми для предпринимателей, чтобы у них оставалось больше времени на действительно важное – свой бизнес.",
+        mission: "Я Надежда Мариан, бухгалтер с более чем 10-летним опытом, специализирующаяся на голландском налогообложении и основательница GeniusTax. Помогаю предпринимателям правильно управлять налоговыми обязательствами, понимать голландские правила и принимать разумные финансовые решения для бизнеса. Мой подход практичный, понятный и ориентирован на результат — объясняю простым языком, нахожу решения и обеспечиваю каждому клиенту персональное руководство, а не просто цифры и формы.",
         cta: "Наши услуги",
         experience: { title: "Опыт работы", bodyHTML: "Бухгалтер с 2014 года<br>Работаю в Нидерландах с 2018 года" },
         services: { title: "Услуги", bodyHTML: "Декларации<br>Подготовка счетов-фактур<br>Ведение зарплат (Payroll)" },
@@ -580,7 +580,7 @@ window.I18N = {
       founder: {
         name: "Nadejda Marian",
         imgAlt: "Nadejda Marian — fondatoarea GeniusTax",
-        mission: "Misiunea noastră este să simplificăm subiectele fiscale pentru antreprenori, ca să rămână mai mult timp pentru ceea ce contează cu adevărat — afacerea lor.",
+        mission: "Sunt Nadejda Marian, contabil cu peste 10 ani de experiență, specializată în fiscalitate olandeză și fondatoarea GeniusTax. Ajut antreprenorii să își gestioneze corect obligațiile fiscale, să înțeleagă regulile din Olanda și să ia decizii financiare înțelepte pentru afacerea lor. Abordarea mea este practică, clară și orientată spre rezultate — explic pe înțelesul tuturor, găsesc soluții și mă asigur că fiecare client primește îndrumare personalizată, nu doar cifre și formulare.",
         cta: "Serviciile noastre",
         experience: { title: "Experiență", bodyHTML: "Contabil din 2014<br>Lucrez în Țările de Jos din 2018" },
         services: { title: "Servicii", bodyHTML: "Declarații fiscale<br>Pregătire facturi<br>Payroll (salarizare)" },
