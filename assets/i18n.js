@@ -421,7 +421,7 @@ window.I18N = {
     cta: { consult: "Programează o consultație", learnMore: "Află mai mult" },
     footer: { privacy: "Politica de confidențialitate (GDPR)", copyright: "© 2025 Toate drepturile rezervate" },
 
-    hero: { title: "GeniusTax — contabilitate în limba ta", subtitle: "Concentrează-te pe afaceri, lasă cifrele la noi.", cta: "Vezi pachetele" },
+    hero: { title: "GeniusTax — contabilitate în limba\u00A0ta", subtitle: "Concentrează-te pe afaceri, lasă cifrele la noi.", cta: "Vezi pachetele" },
     about: { lead: "GeniusTax este un partener de încredere pentru antreprenorii din Țările de Jos." },
     aboutUs: { title: "Despre noi", lead: "Simplificăm contabilitatea: ținem evidența, depunem declarațiile, gestionăm salarizarea și suntem mereu disponibili pentru consultanță." },
 
