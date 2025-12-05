@@ -187,7 +187,7 @@ window.I18N = {
         missionTitle: "Mission",
         missionDesc: "Our mission is to make tax topics clear and simple for entrepreneurs so you have more time to grow your business.",
         valuesTitle: "Values",
-        valuesDesc: "Seriousness, transparency and genuine respect for every client are the foundation of our approach. It is important for us not only to solve technical tasks, but also to give confidence.",
+        valuesDesc: "Seriousness, transparency and genuine respect for every client are the foundation of our approach. It is important for us not only to solve technical tasks, but also to build trust.",
         approachTitle: "Approach",
         approachDesc: "We explain complex tax things in simple words and bring peace of mind in dealings with the Belastingdienst."
       },
@@ -389,7 +389,7 @@ window.I18N = {
         missionTitle: "Миссия",
         missionDesc: "Наша миссия — сделать налоговые вопросы максимально простыми для предпринимателей, чтобы у вас оставалось больше времени на важное — развитие бизнеса.",
         valuesTitle: "Ценности",
-        valuesDesc: "Серьёзность, прозрачность и уважение к каждому клиенту — основа нашего подхода. Для нас важно не только решать технические задачи, но и дарить уверенность.",
+        valuesDesc: "Серьёзность, прозрачность и уважение к каждому клиенту — основа нашего подхода. Для нас важно не только решать технические задачи, но и создавать доверие.",
         approachTitle: "Подход",
         approachDesc: "Мы объясняем сложные налоговые вещи простыми словами и обеспечиваем спокойствие в отношениях с Belastingdienst."
       },
@@ -591,7 +591,7 @@ window.I18N = {
         missionTitle: "Misiune",
         missionDesc: "Misiunea noastră este să simplificăm fiscalitatea pentru antreprenori, ca să aveți mai mult timp pentru dezvoltarea afacerii.",
         valuesTitle: "Valori",
-        valuesDesc: "Seriozitate, transparență și respect autentic pentru fiecare client — baza abordării noastre.",
+        valuesDesc: "Seriozitate, transparență și respect autentic pentru fiecare client sunt baza abordării noastre. Pentru noi este important nu doar să rezolvăm sarcini tehnice, ci și să construim încredere.",
         approachTitle: "Abordare",
         approachDesc: "Explicăm lucrurile fiscale complexe pe înțelesul tuturor și aducem liniște în relația cu Belastingdienst."
       },
