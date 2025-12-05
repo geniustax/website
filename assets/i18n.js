@@ -567,7 +567,7 @@ window.I18N = {
         },
         q7: {
           title: "Pot avea mai multe companii simultan (ZZP, VOF, BV)?",
-          html: "<p><strong>Poți deține mai multe companii, de exemplu VOF sau BV, dar nu poți avea două ZZP simultan — în Țările de Jos este considerată aceeași activitate antreprenorială.</strong></p><p>Totuși, poți combina forme diferite (de ex., ZZP și fondator BV).</p><p>Te ajutăm să separi corect activitățile și taxele, legal și avantajos.</p>"
+          html: "<p><strong>Poți deține mai multe companii, cum ar fi VOF sau BV, însă nu poți avea două entități ZZP în același timp. În Țările de Jos, toate activitățile desfășurate ca ZZP sunt considerate parte din aceeași activitate antreprenorială.</strong></p><p>Totuși, poți combina forme diferite (de ex., ZZP și fondator BV).</p><p>Te ajutăm să separi corect activitățile și taxele, legal și avantajos.</p>"
         },
         q8: {
           title: "Trebuie să plătesc taxe dacă firma este temporar inactivă?",
