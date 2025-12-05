@@ -522,7 +522,7 @@ window.I18N = {
             "Tot din pachetul Standard",
             "Soluții personalizate pentru afacerea ta",
             "Consultanță aprofundată și planificare strategică",
-            "Reprezentare în relația cu autoritatea fiscală"
+            "Reprezentare în relația cu autoritățile fiscale"
           ]
         },
         onetime: {
@@ -551,15 +551,15 @@ window.I18N = {
         title: "Întrebări frecvente",
         q1: {
           title: "Ce servicii sunt incluse în pachete?",
-          html: "<p><strong>Pachetul Basic</strong> include declarații trimestriale și anuale, pregătire facturi și consultanță de bază.</p><p><strong>Pachetul Standard</strong> înseamnă contabilitate completă, salarizare (dacă există angajați), declarații trimestriale și anuale, rapoarte financiare și consultanțe periodice.</p><p><strong>Pachetul Premium</strong> include tot din Standard plus soluții personalizate, consultanță aprofundată, planificare strategică și reprezentare la autoritatea fiscală.</p><p>Oferim și <strong>servicii punctuale</strong> fără abonament lunar — declarații unice, consultații, înregistrare la KvK și alte servicii la cerere.</p>"
+          html: "<p><strong>Pachetul Basic</strong> include declarații trimestriale și anuale, pregătire facturi și consultanță de bază.</p><p><strong>Pachetul Standard</strong> înseamnă contabilitate completă, salarizare (dacă există angajați), declarații trimestriale și anuale, rapoarte financiare și consultanțe periodice.</p><p><strong>Pachetul Premium</strong> include tot din Standard plus soluții personalizate, consultanță aprofundată, planificare strategică și reprezentare la autoritățile fiscale.</p><p>Oferim și <strong>servicii punctuale</strong> fără abonament lunar — declarații unice, consultații, înregistrare la KvK și alte servicii la cerere.</p>"
         },
         q2: {
           title: "Cât de des trebuie depusă declarația BTW?",
-          html: "<p>Frecvența depinde de cifra de afaceri:</p><p><strong>Trimestrial (per kwartaal)</strong> — opțiunea standard pentru majoritatea antreprenorilor. Depunere la fiecare 3 luni.</p><p><strong>Lunar (per maand)</strong> — la cifră de afaceri mare sau la cererea autorității fiscale.</p><p><strong>Anual (per jaar)</strong> — dacă BTW anual este sub €1.883, se poate depune o dată pe an până la 31 martie.</p><p>Ne ocupăm de pregătirea și depunerea declarațiilor fiscale și ne asigurăm că totul este depus la timp în conformitate cu cerințele autorității fiscale.</p>"
+          html: "<p>Frecvența depinde de cifra de afaceri:</p><p><strong>Trimestrial (per kwartaal)</strong> — opțiunea standard pentru majoritatea antreprenorilor. Depunere la fiecare 3 luni.</p><p><strong>Lunar (per maand)</strong> — la cifră de afaceri mare sau la cererea autorităților fiscale.</p><p><strong>Anual (per jaar)</strong> — dacă BTW anual este sub €1.883, se poate depune o dată pe an până la 31 martie.</p><p>Ne ocupăm de pregătirea și depunerea declarațiilor fiscale și ne asigurăm că totul este depus la timp în conformitate cu cerințele autorităților fiscale.</p>"
         },
         q3: {
           title: "Am nevoie de contabilitate ca ZZP?",
-          html: "<p><strong>Da, ca ZZP trebuie să păstrezi evidența contabilă — dar angajarea unui contabil nu este obligatorie, poți ține evidența singur. Însă este important ca aceasta să fie ținută corect și să respecte cerințele autorității fiscale.</strong></p><p>Ca ZZP trebuie să înregistrezi corect toate veniturile și cheltuielile. Este necesar pentru:</p><ul><li>Depunerea declarației anuale de impozit pe venit (IB)</li><li>Declarații trimestriale BTW (dacă se aplică)</li><li>Respectarea cerințelor autorității fiscale</li><li>Controlul finanțelor afacerii</li></ul><p>Noi ne ocupăm de contabilitate ca tu să te concentrezi pe afaceri.</p>"
+          html: "<p><strong>Da, ca ZZP trebuie să păstrezi evidența contabilă — dar angajarea unui contabil nu este obligatorie, poți ține evidența singur. Însă este important ca aceasta să fie ținută corect și să respecte cerințele autorităților fiscale.</strong></p><p>Ca ZZP trebuie să înregistrezi corect toate veniturile și cheltuielile. Este necesar pentru:</p><ul><li>Depunerea declarației anuale de impozit pe venit (IB)</li><li>Declarații trimestriale BTW (dacă se aplică)</li><li>Respectarea cerințelor autorităților fiscale</li><li>Controlul finanțelor afacerii</li></ul><p>Noi ne ocupăm de contabilitate ca tu să te concentrezi pe afaceri.</p>"
         },
         q4: {
           title: "Ajutați cu înregistrarea la KvK?",
@@ -575,7 +575,7 @@ window.I18N = {
         },
         q7: {
           title: "Ce fac dacă am primit o amendă mare (ex., €5.000) pentru o declarație nedepusă?",
-          html: "<p><strong>Dacă ai ratat termenul de depunere, autoritatea fiscală (Belastingdienst) poate aplica o amendă.</strong></p><p>Nu intra în panică — verificăm perioadele lipsă, pregătim declarațiile și depunem o solicitare oficială de reducere a amenzii.</p><p>De multe ori suma poate fi redusă semnificativ dacă acționezi la timp.</p>"
+          html: "<p><strong>Dacă ai ratat termenul de depunere, autoritățile fiscale (Belastingdienst) pot aplica o amendă.</strong></p><p>Nu intra în panică — verificăm perioadele lipsă, pregătim declarațiile și depunem o solicitare oficială de reducere a amenzii.</p><p>De multe ori suma poate fi redusă semnificativ dacă acționezi la timp.</p>"
         },
         q8: {
           title: "Pot avea mai multe companii simultan (ZZP, VOF, BV)?",
@@ -583,7 +583,7 @@ window.I18N = {
         },
         q9: {
           title: "Trebuie să plătesc taxe dacă firma este temporar inactivă?",
-          html: "<p><strong>Da, chiar fără venit trebuie depuse declarații zero. Astfel confirmi că firma este activă și eviți amenzile.</strong></p><p>Pregătim declarațiile zero și notificăm autoritatea fiscală în numele tău.</p>"
+          html: "<p><strong>Da, chiar fără venit trebuie depuse declarații zero. Astfel confirmi că firma este activă și eviți amenzile.</strong></p><p>Pregătim declarațiile zero și notificăm autoritățile fiscale în numele tău.</p>"
         }
       }
     },
