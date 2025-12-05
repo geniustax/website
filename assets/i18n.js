@@ -146,30 +146,26 @@ window.I18N = {
           html: "<p>The frequency depends on your company's turnover:</p><p><strong>Quarterly (per kwartaal)</strong> — the standard option for most entrepreneurs. The return is filed every 3 months.</p><p><strong>Monthly (per maand)</strong> — for high turnover or if required by the tax authority.</p><p><strong>Annually (per jaar)</strong> — if annual VAT is below €1,883, you may file once a year by March 31.</p><p>We will handle the preparation and filing of tax returns and ensure everything is submitted on time in compliance with tax authority requirements.</p>"
         },
         q3: {
-          title: "Do I need bookkeeping as a ZZP?",
-          html: "<p><strong>Yes, as a ZZP you are required to keep accounting records — but hiring an accountant is not mandatory, you can manage the records yourself. However, it's important that the records are kept correctly and comply with tax authority requirements.</strong></p><p>As a ZZP you must accurately track all income and expenses. This is required for:</p><ul><li>Filing the annual income tax return (IB)</li><li>Quarterly VAT (BTW) returns (if applicable)</li><li>Complying with tax authority requirements</li><li>Controlling your business finances</li></ul><p>We can take care of bookkeeping so you can focus on your business.</p>"
-        },
-        q4: {
           title: "Do you help with KvK registration?",
           html: "<p><strong>Yes, we provide full support for company registration.</strong></p><p>Our services include:</p><ul><li>Consultation on choosing a legal form (ZZP, VOF, BV)</li><li>Preparation of all required documents</li><li>Registration with the Chamber of Commerce (KvK)</li><li>Requesting the KvK extract (uitreksel)</li><li>Assistance with registration changes</li></ul><p>We guide you through the process in your language.</p>"
         },
-        q5: {
+        q4: {
           title: "Do you work with companies that have employees?",
           html: "<p><strong>Yes, we provide a full Payroll service.</strong></p><p>For companies with employees we offer:</p><ul><li>Payroll processing (loonheffing)</li><li>Salary and tax calculations</li><li>Preparation and filing of payroll tax returns</li><li>Requesting a payroll tax number (loonheffingsnummer)</li><li>Preparing annual statements (jaaropgave)</li></ul><p>Payroll is included in Standard and Premium packages if you have employees.</p>"
         },
-        q6: {
+        q5: {
           title: "Can I get a one-off consultation?",
           html: "<p><strong>Yes, we offer individual services without a monthly subscription.</strong></p><p>You can order one-off services:</p><ul><li>Consultation on a specific accounting or tax question</li><li>One-off tax return (BTW, IB, VPB)</li><li>Preparing Jaaropgave / Jaarrekening</li><li>Review of existing bookkeeping</li><li>Other accounting services on request</li></ul><p>Contact us to discuss your needs and get a tailored quote.</p>"
         },
-        q7: {
+        q6: {
           title: "What if I received a large fine (e.g., €5,000) for a missed return?",
           html: "<p><strong>If you missed a filing deadline, the Belastingdienst may impose a fine.</strong></p><p>Don’t panic — we will check the periods with missing returns, prepare the outstanding filings and submit an official request to reduce the fine.</p><p>In most cases the amount can be significantly reduced if you act promptly.</p>"
         },
-        q8: {
+        q7: {
           title: "Can I have multiple companies at the same time (ZZP, VOF, BV)?",
           html: "<p><strong>You may own multiple companies, e.g., VOF or BV, but you cannot have two ZZP at the same time — in the Netherlands this is considered the same entrepreneurial activity.</strong></p><p>However, you can combine different forms (for example, be a ZZP and a BV founder).</p><p>We will help correctly separate activities and taxes so everything is legal and beneficial.</p>"
         },
-        q9: {
+        q8: {
           title: "Do I have to pay taxes if the company is temporarily inactive?",
           html: "<p><strong>Yes, even with no income you must file zero returns. This confirms that your business is active and helps avoid fines.</strong></p><p>We can prepare the zero filings and notify the tax authority on your behalf.</p>"
         }
@@ -352,30 +348,26 @@ window.I18N = {
           html: "<p>Частота зависит от оборота вашей компании:</p><p><strong>Квартально (per kwartaal)</strong> — стандартный вариант для большинства предпринимателей. Декларация подается раз в 3 месяца.</p><p><strong>Ежемесячно (per maand)</strong> — при высоком обороте или по требованию налоговой службы.</p><p><strong>Ежегодно (per jaar)</strong> — если годовой BTW менее €1.883, можно подавать раз в год до 31 марта.</p><p>Мы возьмём на себя подготовку и подачу налоговых деклараций, а также проследим, чтобы всё было подано вовремя в соответствии с требованиями налоговой службы.</p>"
         },
         q3: {
-          title: "Нужна ли мне бухгалтерия как ZZP?",
-          html: "<p><strong>Да, как ZZP вы обязаны вести бухгалтерский учёт — но нанимать бухгалтера не обязательно, вы можете вести учёт самостоятельно. Однако важно, чтобы он вёлся правильно и соответствовал требованиям налоговой службы.</strong></p><p>Как ZZP вы должны аккуратно регистрировать все доходы и расходы. Это необходимо для:</p><ul><li>Подачи годовой налоговой декларации (IB)</li><li>Квартальных BTW деклараций (если применимо)</li><li>Соблюдения требований налоговой службы</li><li>Контроля финансов вашего бизнеса</li></ul><p>Мы возьмём бухгалтерию на себя, чтобы вы сосредоточились на бизнесе.</p>"
-        },
-        q4: {
           title: "Помогаете ли вы с регистрацией в KvK?",
           html: "<p><strong>Да, мы предоставляем полное сопровождение при регистрации компании.</strong></p><p>Наши услуги включают:</p><ul><li>Консультацию по выбору правовой формы (ZZP, VOF, BV)</li><li>Подготовку необходимых документов</li><li>Регистрацию в Торговой палате (KvK)</li><li>Запрос uitreksel (выписки из KvK)</li><li>Помощь с изменениями в регистрации</li></ul><p>Проведём вас через весь процесс на вашем языке.</p>"
         },
-        q5: {
+        q4: {
           title: "Работаете ли вы с компаниями с сотрудниками?",
           html: "<p><strong>Да, мы предоставляем полный спектр Payroll-услуг.</strong></p><p>Для компаний с сотрудниками мы предлагаем:</p><ul><li>Ведение зарплатной ведомости (loonheffing)</li><li>Расчёт зарплаты и налогов</li><li>Подготовку и подачу налоговых деклараций по зарплате</li><li>Запрос налогового номера на зарплату (loonheffingsnummer)</li><li>Подготовку годовых отчётов (jaaropgave)</li></ul><p>Payroll включён в Стандартный и Премиум пакеты при наличии сотрудников.</p>"
         },
-        q6: {
+        q5: {
           title: "Можно ли получить разовую консультацию?",
           html: "<p><strong>Да, мы предлагаем индивидуальные услуги без абонентской платы.</strong></p><p>Вы можете заказать разовые услуги:</p><ul><li>Консультация по конкретному бухгалтерскому или налоговому вопросу</li><li>Разовая налоговая декларация (BTW, IB, VPB)</li><li>Подготовка Jaaropgave / Jaarrekening</li><li>Проверка существующей бухгалтерии</li><li>Другие услуги по запросу</li></ul><p>Свяжитесь с нами, чтобы обсудить потребности и получить предложение.</p>"
         },
-        q7: {
+        q6: {
           title: "Что делать, если я получил большой штраф (например, €5.000) за несданную декларацию?",
           html: "<p><strong>Если вы пропустили срок подачи, Belastingdienst может начислить штраф.</strong></p><p>Не паникуйте — проверим периоды без отчётности, подготовим недостающие декларации и официальное обращение о снижении штрафа.</p><p>Во многих случаях сумму можно существенно уменьшить, если действовать вовремя.</p>"
         },
-        q8: {
+        q7: {
           title: "Могу ли я иметь несколько компаний одновременно (ZZP, VOF, BV)?",
           html: "<p><strong>Вы можете владеть VOF или BV, но иметь два ZZP одновременно нельзя — это считается одной предпринимательской деятельностью.</strong></p><p>Тем не менее, можно совмещать разные формы (например, быть ZZP и учредителем BV).</p><p>Поможем правильно разделить деятельность и налоги, чтобы всё было законно и выгодно.</p>"
         },
-        q9: {
+        q8: {
           title: "Нужно ли платить налоги, если компания временно не работает?",
           html: "<p><strong>Да, даже без дохода нужно подавать нулевые декларации. Это подтверждает активность бизнеса и помогает избежать штрафов.</strong></p><p>Мы подготовим нулевую отчётность и уведомим налоговую от вашего имени.</p>"
         }
@@ -558,30 +550,26 @@ window.I18N = {
           html: "<p>Frecvența depinde de cifra de afaceri:</p><p><strong>Trimestrial (per kwartaal)</strong> — opțiunea standard pentru majoritatea antreprenorilor. Depunere la fiecare 3 luni.</p><p><strong>Lunar (per maand)</strong> — la cifră de afaceri mare sau la cererea autorităților fiscale.</p><p><strong>Anual (per jaar)</strong> — dacă TVA anual este sub €1.883, se poate depune o dată pe an până la 31 martie.</p><p>Ne ocupăm de pregătirea și depunerea declarațiilor fiscale și ne asigurăm că totul este depus la timp în conformitate cu cerințele autorităților fiscale.</p>"
         },
         q3: {
-          title: "Am nevoie de contabilitate ca ZZP?",
-          html: "<p><strong>Da, ca ZZP trebuie să păstrezi evidența contabilă — dar angajarea unui contabil nu este obligatorie, poți ține evidența singur. Însă este important ca aceasta să fie ținută corect și să respecte cerințele autorităților fiscale.</strong></p><p>Ca ZZP trebuie să înregistrezi corect toate veniturile și cheltuielile. Este necesar pentru:</p><ul><li>Depunerea declarației anuale de impozit pe venit (IB)</li><li>Declarații trimestriale TVA (dacă se aplică)</li><li>Respectarea cerințelor autorităților fiscale</li><li>Controlul finanțelor afacerii</li></ul><p>Noi ne ocupăm de contabilitate ca tu să te concentrezi pe afaceri.</p>"
-        },
-        q4: {
           title: "Ajutați cu înregistrarea la KvK?",
           html: "<p><strong>Da, oferim suport complet pentru înregistrarea firmei.</strong></p><p>Serviciile noastre includ:</p><ul><li>Consultanță pentru forma juridică (ZZP, VOF, BV)</li><li>Pregătirea documentelor necesare</li><li>Înregistrare la Camera de Comerț (KvK)</li><li>Solicitare extras KvK (uitreksel)</li><li>Asistență pentru modificări în registru</li></ul><p>Te ghidăm în limba ta.</p>"
         },
-        q5: {
+        q4: {
           title: "Lucrați cu companii care au angajați?",
           html: "<p><strong>Da, oferim servicii complete de Payroll.</strong></p><p>Pentru companii cu angajați oferim:</p><ul><li>Procesare salarii (loonheffing)</li><li>Calcul salarii și taxe</li><li>Pregătire și depunere declarații de taxe salariale</li><li>Solicitare număr de taxe salariale (loonheffingsnummer)</li><li>Pregătire situații anuale (jaaropgave)</li></ul><p>Payroll este inclus în pachetele Standard și Premium când există angajați.</p>"
         },
-        q6: {
+        q5: {
           title: "Pot obține o consultație punctuală?",
           html: "<p><strong>Da, oferim servicii punctuale fără abonament lunar.</strong></p><p>Poți comanda servicii punctuale:</p><ul><li>Consultanță pe o întrebare contabilă sau fiscală</li><li>Declarație unică (TVA, IB, VPB)</li><li>Pregătire Jaaropgave / Jaarrekening</li><li>Verificarea contabilității existente</li><li>Alte servicii la cerere</li></ul><p>Contactează-ne pentru un ofertă adaptată.</p>"
         },
-        q7: {
+        q6: {
           title: "Ce fac dacă am primit o amendă mare (ex., €5.000) pentru o declarație nedepusă?",
           html: "<p><strong>Dacă ai ratat termenul de depunere, autoritățile fiscale (Belastingdienst) pot aplica o amendă.</strong></p><p>Nu intra în panică — verificăm perioadele lipsă, pregătim declarațiile și depunem o solicitare oficială de reducere a amenzii.</p><p>De multe ori suma poate fi redusă semnificativ dacă acționezi la timp.</p>"
         },
-        q8: {
+        q7: {
           title: "Pot avea mai multe companii simultan (ZZP, VOF, BV)?",
           html: "<p><strong>Poți deține mai multe companii, de exemplu VOF sau BV, dar nu poți avea două ZZP simultan — în Țările de Jos este considerată aceeași activitate antreprenorială.</strong></p><p>Totuși, poți combina forme diferite (de ex., ZZP și fondator BV).</p><p>Te ajutăm să separi corect activitățile și taxele, legal și avantajos.</p>"
         },
-        q9: {
+        q8: {
           title: "Trebuie să plătesc taxe dacă firma este temporar inactivă?",
           html: "<p><strong>Da, chiar fără venit trebuie depuse declarații zero. Astfel confirmi că firma este activă și eviți amenzile.</strong></p><p>Pregătim declarațiile zero și notificăm autoritățile fiscale în numele tău.</p>"
         }
