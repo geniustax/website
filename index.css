@@ -123,7 +123,7 @@
 }
 
 .u-section-1 .u-image-1 {
-  width: 350px;
+  width: 500px;
   height: 600px;
   object-fit: cover;
   object-position: center center;
@@ -134,6 +134,14 @@
   --animation-custom_in-rotate: 0deg;
   --animation-custom_in-scale: 1;
   margin: -454px auto 0 21px;
+}
+
+.u-section-1 .u-shape-1 {
+  width: 300px;
+  height: 250px;
+  margin-top: -200px;
+  margin-right: 0;
+  margin-left: 150px;
 }
 
 @media (max-width: 1199px) {
