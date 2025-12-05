@@ -123,8 +123,8 @@
 }
 
 .u-section-1 .u-image-1 {
-  width: 469px;
-  height: 531px;
+  width: 650px;
+  height: 433px;
   object-position: 50% 50%;
   animation-timing-function: ease-in-out;
   --animation-custom_in-translate_x: 0px;
@@ -216,8 +216,8 @@
   }
 
   .u-section-1 .u-image-1 {
-    width: 241px;
-    height: 386px;
+    width: 400px;
+    height: 267px;
     margin-top: -286px;
   }
 }
