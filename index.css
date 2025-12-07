@@ -1,3 +1,156 @@
+/* Hero Section Modern Design Styles */
+
+/* Hero Buttons Layout */
+.u-hero-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.u-hero-buttons .u-btn-2 {
+  background: transparent !important;
+  border: 2px solid #0097a7 !important;
+  color: #0097a7 !important;
+  padding: 19px 24px !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  font-size: 1rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.u-hero-buttons .u-btn-2:hover {
+  background: #0097a7 !important;
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 151, 167, 0.3) !important;
+}
+
+/* Floating Badges */
+.u-floating-badge {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 151, 167, 0.1);
+  border-radius: 16px;
+  padding: 12px 20px;
+  box-shadow: 0 8px 32px rgba(0, 151, 167, 0.15);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2c3e50;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  z-index: 5;
+}
+
+.u-floating-badge:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 151, 167, 0.25);
+  background: rgba(255, 255, 255, 1);
+}
+
+.u-badge-icon {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #0097a7 0%, #00bcd4 100%);
+  border-radius: 10px;
+  padding: 6px;
+}
+
+.u-badge-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #2c3e50;
+  white-space: nowrap;
+}
+
+/* Desktop Badge Positioning */
+.u-floating-badge-1 {
+  top: 20px;
+  right: 20px;
+  animation-delay: 0.8s;
+}
+
+.u-floating-badge-2 {
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+  animation-delay: 1.0s;
+}
+
+.u-floating-badge-3 {
+  bottom: 40px;
+  right: 40px;
+  animation-delay: 1.2s;
+}
+
+/* Modern Typography and Spacing */
+.u-section-1 .u-text-1 {
+  font-size: 2.9375rem !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.025em !important;
+  color: #2c3e50 !important;
+  margin-bottom: 16px !important;
+}
+
+/* Tablet Responsive Styles */
+@media (max-width: 991px) and (min-width: 768px) {
+  .u-hero-buttons {
+    gap: 14px !important;
+    margin-top: 32px !important;
+  }
+  
+  .u-floating-badge {
+    padding: 10px 16px !important;
+    font-size: 13px !important;
+    gap: 10px !important;
+  }
+  
+  .u-badge-icon {
+    width: 28px !important;
+    height: 28px !important;
+    font-size: 18px !important;
+  }
+  
+  .u-floating-badge-1 {
+    top: 15px !important;
+    right: 15px !important;
+  }
+  
+  .u-floating-badge-2 {
+    top: 45% !important;
+    left: -15px !important;
+  }
+  
+  .u-floating-badge-3 {
+    bottom: 30px !important;
+    right: 30px !important;
+  }
+}
+
+/* Small Tablet Portrait */
+@media (max-width: 767px) and (min-width: 576px) {
+  .u-hero-buttons {
+    flex-direction: row !important;
+    gap: 12px !important;
+    justify-content: flex-start !important;
+  }
+  
+  .u-hero-buttons .u-btn-1,
+  .u-hero-buttons .u-btn-2 {
+    flex: 1 !important;
+    text-align: center !important;
+  }
+}
+
 /* WhatsApp Floating Button Styles */
 .whatsapp-float {
   position: fixed;
@@ -123,7 +276,7 @@
 }
 
 .u-section-1 .u-image-1 {
-  width: 600px;
+  width: 480px;
   height: 720px;
   object-fit: cover;
   object-position: center center;
@@ -143,7 +296,7 @@
 }
 
 .u-section-1 .u-shape-1 {
-  width: 400px;
+  width: 320px;
   height: 600px;
   background: linear-gradient(135deg, #0097a7 0%, #00bcd4 100%);
   border-radius: 30px;
@@ -241,7 +394,7 @@
   }
 
   .u-section-1 .u-image-1 {
-    width: 300px;
+    width: 250px;
     height: 400px;
     object-fit: cover;
     object-position: center center;
@@ -278,6 +431,58 @@
   .u-section-1 .u-btn-1 {
     margin-top: 31px;
   }
+  
+  /* Hero Buttons Mobile Layout */
+  .u-hero-buttons {
+    flex-direction: column !important;
+    gap: 12px !important;
+    margin-top: 24px !important;
+    align-items: stretch !important;
+  }
+  
+  .u-hero-buttons .u-btn-2 {
+    padding: 16px 20px !important;
+    font-size: 0.9rem !important;
+    text-align: center !important;
+  }
+  
+  /* Floating Badges Mobile Optimization */
+  .u-floating-badge {
+    padding: 8px 12px !important;
+    border-radius: 12px !important;
+    font-size: 12px !important;
+    gap: 8px !important;
+    box-shadow: 0 4px 20px rgba(0, 151, 167, 0.12) !important;
+  }
+  
+  .u-badge-icon {
+    width: 24px !important;
+    height: 24px !important;
+    font-size: 16px !important;
+    border-radius: 6px !important;
+  }
+  
+  .u-badge-text {
+    font-size: 11px !important;
+    font-weight: 500 !important;
+  }
+  
+  /* Mobile Badge Positioning - Compact Layout */
+  .u-floating-badge-1 {
+    top: 10px !important;
+    right: 10px !important;
+  }
+  
+  .u-floating-badge-2 {
+    top: 40% !important;
+    left: -10px !important;
+    transform: translateY(-50%) !important;
+  }
+  
+  .u-floating-badge-3 {
+    bottom: 20px !important;
+    right: 20px !important;
+  }
 
   .u-section-1 .u-layout-cell-2 {
     min-height: 402px;
@@ -292,10 +497,10 @@
   }
 
   .u-section-1 .u-image-1 {
-    width: 250px;
+    width: 200px;
     height: 320px;
     object-fit: cover;
-    object-position: 40% center;
+    object-position: center center;
     margin-top: -144px;
     margin-bottom: -21px;
     margin-left: 0;
