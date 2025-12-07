@@ -11,7 +11,13 @@ window.I18N = {
     cta: { consult: "Book a consultation", learnMore: "Learn more" },
     footer: { privacy: "Privacy Policy (GDPR)", copyright: "© 2025 All rights reserved" },
 
-    hero: { title: "GeniusTax — accounting in your language", subtitle: "Focus on your business, leave the numbers to us.", cta: "See packages" },
+    hero: { 
+      eyebrow: "Accounting and taxes in the Netherlands",
+      title: "GeniusTax — accounting in your language", 
+      subtitle: "We help Russian-speaking entrepreneurs, zzp and freelancers in the Netherlands manage accounts, file returns and communicate with Belastingdienst without stress and complex terms.",
+      btnPrimary: "Contact us",
+      btnSecondary: "Our packages"
+    },
     about: { lead: "GeniusTax is a trusted partner for entrepreneurs in the Netherlands." },
     aboutUs: { title: "About us", lead: "GeniusTax is a trusted partner for entrepreneurs in the Netherlands. We make accounting simple and clear: we handle bookkeeping, file tax returns, run payroll, and are always available for advice." },
 
@@ -213,7 +219,13 @@ window.I18N = {
     cta: { consult: "Связаться с нами", learnMore: "Узнать больше" },
     footer: { privacy: "Политика конфиденциальности (GDPR)", copyright: "© 2025 Все права защищены" },
 
-    hero: { title: "GeniusTax — бухгалтерия на вашем языке", subtitle: "Занимайтесь бизнесом, а цифры мы возьмём на себя.", cta: "Посмотреть пакеты" },
+    hero: { 
+      eyebrow: "Бухгалтерия и налоги в Нидерландах",
+      title: "GeniusTax — бухгалтерия на вашем языке", 
+      subtitle: "Помогаем русскоязычным предпринимателям, zzp и фрилансерам в Нидерландах вести учёт, сдавать декларации и общаться с Belastingdienst без стресса и сложных терминов.",
+      btnPrimary: "Связаться с нами",
+      btnSecondary: "Наши пакеты"
+    },
     about: { lead: "GeniusTax — надёжный партнёр для предпринимателей в Нидерландах." },
     aboutUs: { title: "О нас", lead: "Мы упрощаем бухгалтерию: ведём учёт, подаём декларации, ведём payroll и всегда на связи для консультаций." },
 
@@ -415,7 +427,13 @@ window.I18N = {
     cta: { consult: "Programează o consultație", learnMore: "Află mai mult" },
     footer: { privacy: "Politica de confidențialitate (GDPR)", copyright: "© 2025 Toate drepturile rezervate" },
 
-    hero: { title: "GeniusTax — contabilitate în limba\u00A0ta", subtitle: "Concentrează-te pe afaceri, lasă cifrele la noi.", cta: "Vezi pachetele" },
+    hero: { 
+      eyebrow: "Contabilitate și taxe în Olanda",
+      title: "GeniusTax — contabilitate în limba\u00A0ta", 
+      subtitle: "Ajutăm antreprenorii vorbitori de română, zzp și freelanceri din Olanda să gestioneze contabilitatea, să depună declarații și să comunice cu Belastingdienst fără stres și termeni complicați.",
+      btnPrimary: "Contactați-ne",
+      btnSecondary: "Pachetele noastre"
+    },
     about: { lead: "GeniusTax este un partener de încredere pentru antreprenorii din Țările de Jos." },
     aboutUs: { title: "Despre noi", lead: "Simplificăm contabilitatea: ținem evidența, depunem declarațiile, gestionăm salarizarea și suntem mereu disponibili pentru consultanță." },
 
