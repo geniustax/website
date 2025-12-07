@@ -14,7 +14,7 @@ window.I18N = {
     hero: { 
       eyebrow: "Accounting and taxes in the Netherlands",
       title: "GeniusTax — accounting in your language", 
-      subtitle: "We help Russian-speaking entrepreneurs, zzp and freelancers in the Netherlands manage accounts, file returns and communicate with Belastingdienst without stress and complex terms.",
+      subtitle: "We help entrepreneurs, zzp and freelancers in the Netherlands manage accounts, file returns and communicate with Belastingdienst without stress and complex terms.",
       btnPrimary: "Contact us",
       btnSecondary: "Our packages"
     },
@@ -206,6 +206,11 @@ window.I18N = {
           { name: "Oleg Smirnov", role: "Freelancer", quote: "As a freelancer, I used to worry about VAT deadlines. With GeniusTax everything is done quickly and professionally, and I can focus on my work." }
         ]
       }
+    },
+
+    // Privacy Policy page  
+    privacy: {
+      title: "Privacy Policy & Legal Disclaimer"
     }
   },
 
@@ -414,6 +419,11 @@ window.I18N = {
           { name: "Олег Смирнов", role: "Фрилансер", quote: "Как фрилансер, я переживал из‑за сроков по НДС. С GeniusTax всё делается быстро и профессионально, а я могу сосредоточиться на работе." }
         ]
       }
+    },
+
+    // Страница Политика конфиденциальности  
+    privacy: {
+      title: "Privacy Policy & Legal Disclaimer"
     }
   },
 
@@ -622,6 +632,11 @@ window.I18N = {
           { name: "Oleg Smirnov", role: "Freelancer", quote: "Ca freelancer, mă îngrijoram de termenele TVA. Cu GeniusTax totul se face rapid și profesionist, iar eu mă pot concentra pe munca mea." }
         ]
       }
+    },
+
+    // Pagina Politica de confidențialitate  
+    privacy: {
+      title: "Privacy Policy & Legal Disclaimer"
     }
   }
 };
