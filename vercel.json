@@ -2,12 +2,12 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/services", "destination": "/Services.html" },
-    { "source": "/contact", "destination": "/Contact.html" },
-    { "source": "/about-us", "destination": "/About-us.html" },
-    { "source": "/about", "destination": "/About-us.html" },
-    { "source": "/terms-of-use", "destination": "/Terms-of-use.html" },
-    { "source": "/terms", "destination": "/Terms-of-use.html" },
-    { "source": "/privacy", "destination": "/Privacy.html" }
+    { "source": "/services", "destination": "/Services" },
+    { "source": "/contact", "destination": "/Contact" },
+    { "source": "/about-us", "destination": "/About-us" },
+    { "source": "/about", "destination": "/About-us" },
+    { "source": "/terms-of-use", "destination": "/Terms-of-use" },
+    { "source": "/terms", "destination": "/Terms-of-use" },
+    { "source": "/privacy", "destination": "/Privacy" }
   ]
 }
