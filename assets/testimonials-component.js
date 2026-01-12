@@ -1,7 +1,46 @@
-// Renders testimonials block without fetch (file-protocol safe)
+// Renders testimonials block dynamically from i18n data
 (function(){
+  function getTestimonials(){
+    var lang = 'ru';
+    try { lang = (localStorage && localStorage.getItem('lang')) || 'ru'; } catch(e){}
+    var i18n = window.I18N && window.I18N[lang];
+    if (i18n && i18n.aboutPage && i18n.aboutPage.testimonials && i18n.aboutPage.testimonials.list) {
+      return i18n.aboutPage.testimonials.list;
+    }
+    // Fallback to Russian
+    if (window.I18N && window.I18N.ru && window.I18N.ru.aboutPage) {
+      return window.I18N.ru.aboutPage.testimonials.list;
+    }
+    return [];
+  }
+
   function render(){
-    return '\n<section class="testimonials" aria-labelledby="testimonials-title">\n  <div class="container">\n    <h2 id="testimonials-title" class="testimonials-title" data-i18n="aboutPage.testimonials.title">Что говорят обо мне?</h2>\n    <div class="testimonials-slider" role="region" aria-label="Testimonials slider">\n      <div class="slider-track">\n        <div class="slide">\n          <article class="testimonial-card">\n            <p class="testimonial-quote" data-i18n="aboutPage.testimonials.list.0.quote">Мы перешли на GeniusTax в прошлом году и сразу заметили разницу: прозрачные цены, быстрые ответы и проактивные советы. Очень рекомендуем!</p>\n            <div class="testimonial-meta">\n              <h3 class="testimonial-author" data-i18n="aboutPage.testimonials.list.0.name">Валерий Агафонов</h3>\n              <p class="testimonial-role" data-i18n="aboutPage.testimonials.list.0.role">Директор компании</p>\n            </div>\n          </article>\n        </div>\n        <div class="slide">\n          <article class="testimonial-card">\n            <p class="testimonial-quote" data-i18n="aboutPage.testimonials.list.1.quote">Я не носитель нидерландского, и с GeniusTax налоговая система стала понятной. Их многоязычная поддержка — огромное преимущество.</p>\n            <div class="testimonial-meta">\n              <h3 class="testimonial-author" data-i18n="aboutPage.testimonials.list.1.name">Петр Петров</h3>\n              <p class="testimonial-role" data-i18n="aboutPage.testimonials.list.1.role">Предприниматель</p>\n            </div>\n          </article>\n        </div>\n        <div class="slide">\n          <article class="testimonial-card">\n            <p class="testimonial-quote" data-i18n="aboutPage.testimonials.list.2.quote">Как фрилансер, я переживал из‑за сроков по НДС. С GeniusTax всё делается быстро и профессионально, а я могу сосредоточиться на работе.</p>\n            <div class="testimonial-meta">\n              <h3 class="testimonial-author" data-i18n="aboutPage.testimonials.list.2.name">Олег Смирнов</h3>\n              <p class="testimonial-role" data-i18n="aboutPage.testimonials.list.2.role">Фрилансер</p>\n            </div>\n          </article>\n        </div>\n      </div>\n      <button class="slider-nav slider-prev" aria-label="Previous" type="button">&#10094;</button>\n      <button class="slider-nav slider-next" aria-label="Next" type="button">&#10095;</button>\n      <div class="slider-dots" role="tablist" aria-label="Slide pagination"></div>\n    </div>\n  </div>\n</section>\n';
+    var testimonials = getTestimonials();
+    var slidesHTML = '';
+
+    for (var i = 0; i < testimonials.length; i++) {
+      slidesHTML += '<div class="slide">' +
+        '<article class="testimonial-card">' +
+          '<p class="testimonial-quote" data-i18n="aboutPage.testimonials.list.' + i + '.quote">' + (testimonials[i].quote || '') + '</p>' +
+          '<div class="testimonial-meta">' +
+            '<h3 class="testimonial-author" data-i18n="aboutPage.testimonials.list.' + i + '.name">' + (testimonials[i].name || '') + '</h3>' +
+            '<p class="testimonial-role" data-i18n="aboutPage.testimonials.list.' + i + '.role">' + (testimonials[i].role || '') + '</p>' +
+          '</div>' +
+        '</article>' +
+      '</div>';
+    }
+
+    return '<section class="testimonials" aria-labelledby="testimonials-title">\n' +
+      '  <div class="container">\n' +
+      '    <h2 id="testimonials-title" class="testimonials-title" data-i18n="aboutPage.testimonials.title">Что говорят о нас?</h2>\n' +
+      '    <div class="testimonials-slider" role="region" aria-label="Testimonials slider">\n' +
+      '      <div class="slider-track">\n' + slidesHTML + '</div>\n' +
+      '      <button class="slider-nav slider-prev" aria-label="Previous" type="button">&#10094;</button>\n' +
+      '      <button class="slider-nav slider-next" aria-label="Next" type="button">&#10095;</button>\n' +
+      '      <div class="slider-dots" role="tablist" aria-label="Slide pagination"></div>\n' +
+      '    </div>\n' +
+      '  </div>\n' +
+      '</section>\n';
   }
 
   function getSlidesPerView(){
@@ -61,6 +100,30 @@
     prev.addEventListener('click', function(){ index = Math.max(0, index-1); update(); });
     next.addEventListener('click', function(){ index = Math.min(maxIndex(), index+1); update(); });
     window.addEventListener('resize', layout);
+
+    // Touch/swipe support
+    var touchStartX = 0;
+    var touchEndX = 0;
+    var minSwipeDistance = 50;
+
+    track.addEventListener('touchstart', function(e){
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    track.addEventListener('touchend', function(e){
+      touchEndX = e.changedTouches[0].screenX;
+      var diff = touchStartX - touchEndX;
+      if (Math.abs(diff) > minSwipeDistance) {
+        if (diff > 0 && index < maxIndex()) {
+          index++;
+          update();
+        } else if (diff < 0 && index > 0) {
+          index--;
+          update();
+        }
+      }
+    }, { passive: true });
+
     layout();
   }
 
@@ -69,9 +132,9 @@
     if (!host) return;
     host.innerHTML = render();
     var root = host.querySelector('.testimonials-slider');
-    initSlider(root);
+    if (root) initSlider(root);
     try{
-      var lang = (localStorage && localStorage.getItem('lang')) || 'en';
+      var lang = (localStorage && localStorage.getItem('lang')) || 'ru';
       if (typeof window.applyI18n === 'function') window.applyI18n(lang);
     }catch(e){}
   }

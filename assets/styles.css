@@ -269,10 +269,14 @@ a:hover {
   place-items: center;
   cursor: pointer;
   box-shadow: 0 4px 12px rgba(0,0,0,.08);
+  opacity: 0.4;
+  transition: opacity 0.2s ease;
 }
+.slider-nav:hover { opacity: 1; }
 .slider-prev { left: 8px; }
 .slider-next { right: 8px; }
-.slider-nav:disabled { opacity: .5; cursor: not-allowed; }
+.slider-nav:disabled { opacity: 0.2; cursor: not-allowed; }
+.slider-nav:disabled:hover { opacity: 0.2; }
 
 .slider-dots { display: flex; gap: 8px; justify-content: center; margin-top: 14px; }
 .slider-dot {

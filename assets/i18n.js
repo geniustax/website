@@ -201,9 +201,12 @@ window.I18N = {
       testimonials: {
         title: "What clients say about us?",
         list: [
-          { name: "Valerii Agafonov", role: "Company Director", quote: "We switched to GeniusTax last year and immediately noticed the difference: transparent pricing, fast responses and proactive advice. Highly recommend!" },
-          { name: "Petr Petrov", role: "Entrepreneur", quote: "I am not a native Dutch speaker, and with GeniusTax the Dutch tax system became clear. Their multilingual support is a huge advantage for entrepreneurs like me." },
-          { name: "Oleg Smirnov", role: "Freelancer", quote: "As a freelancer, I used to worry about VAT deadlines. With GeniusTax everything is done quickly and professionally, and I can focus on my work." }
+          { name: "Victor R.", role: "BV / Import", quote: "I transitioned from ZZP to BV with GeniusTax's help. Nadejda handled everything: notary, translations, coordination. She also helped with non-EU import — everything was prepared in advance, customs clearance was very quick. Very professional collaboration." },
+          { name: "Alexandra B.", role: "ZZP Foodtruck", quote: "When I opened my foodtruck, I knew nothing about NVWA, HACCP or labeling. After talking with Nadejda, I understood exactly what I needed to do to operate legally. Clear and practical information." },
+          { name: "Inna S.", role: "Beauty Industry", quote: "I didn't know I could apply for the KOR scheme. After consulting with Nadejda, I understood it was suitable for my income level. A clear and useful discussion that helped me save time and money." },
+          { name: "Ana C.", role: "ZZP", quote: "When I started my company, I had no idea what to do. Nadejda explained everything step by step and gave me written materials about deductible expenses, insurance and car costs. Very helpful, especially at the beginning." },
+          { name: "Vasile Z.", role: "ZZP / Import", quote: "The previous accountant didn't handle VAT correctly for imports from China. Nadejda reviewed the declarations and corrected the situation — the VAT was recovered properly. We really appreciate the professionalism and solid knowledge." },
+          { name: "Catalina C.", role: "BV", quote: "After closing my BV, the dates in Belastingdienst didn't match KVK and I received penalties. GeniusTax clarified the situation and the fines were cancelled. Without this support, it would have been very difficult to resolve." }
         ]
       }
     },
@@ -414,9 +417,12 @@ window.I18N = {
       testimonials: {
         title: "Что говорят о нас?",
         list: [
-          { name: "Валерий Агафонов", role: "Директор компании", quote: "Мы перешли на GeniusTax в прошлом году и сразу заметили разницу: прозрачные цены, быстрые ответы и проактивные советы. Очень рекомендую!" },
-          { name: "Пётр Петров", role: "Предприниматель", quote: "Я не носитель нидерландского языка, и с GeniusTax система налогов в Нидерландах стала понятной. Их многоязычная поддержка — огромное преимущество для таких предпринимателей, как я." },
-          { name: "Олег Смирнов", role: "Фрилансер", quote: "Как фрилансер, я переживал из‑за сроков по НДС. С GeniusTax всё делается быстро и профессионально, а я могу сосредоточиться на работе." }
+          { name: "Виктор Р.", role: "BV / Импорт", quote: "Перешёл с ZZP на BV с помощью GeniusTax. Надежда взяла на себя всё: нотариус, переводы, координация. Также помогла с импортом из страны вне ЕС — всё было подготовлено заранее, растаможка прошла очень быстро. Очень профессиональное сотрудничество." },
+          { name: "Александра Б.", role: "ZZP Фудтрак", quote: "Когда открывала фудтрак, ничего не знала о NVWA, HACCP и маркировке. После разговора с Надеждой поняла, что именно нужно сделать для легальной работы. Чёткая и практичная информация." },
+          { name: "Инна С.", role: "Сфера красоты", quote: "Не знала, что могу подать заявку на схему KOR. После консультации с Надеждой поняла, что она подходит для моего уровня дохода. Понятный и полезный разговор, который помог сэкономить время и деньги." },
+          { name: "Анна К.", role: "ZZP", quote: "Когда открыла фирму, не понимала, что делать. Надежда объяснила всё пошагово и дала письменные материалы о вычитаемых расходах, страховках и автомобильных затратах. Очень полезно, особенно в начале." },
+          { name: "Василий З.", role: "ZZP / Импорт", quote: "Предыдущий бухгалтер неправильно обработал НДС при импорте из Китая. Надежда проверила декларации и исправила ситуацию — НДС был возвращён корректно. Очень ценим профессионализм и глубокие знания." },
+          { name: "Каталина К.", role: "BV", quote: "После закрытия BV даты в Belastingdienst не совпадали с KVK, и я получила штрафы. GeniusTax разъяснила ситуацию, и штрафы были отменены. Без этой поддержки было бы очень сложно всё решить." }
         ]
       }
     },
@@ -627,9 +633,12 @@ window.I18N = {
       testimonials: {
         title: "Ce spun clienții despre noi?",
         list: [
-          { name: "Valerii Agafonov", role: "Director companie", quote: "Am trecut la GeniusTax anul trecut și am observat imediat diferența: prețuri transparente, răspunsuri rapide și sfaturi proactive. Recomand cu căldură!" },
-          { name: "Petr Petrov", role: "Antreprenor", quote: "Nu sunt vorbitor nativ de olandeză, iar cu GeniusTax sistemul fiscal din Olanda a devenit clar. Suportul lor multilingv este un mare avantaj pentru antreprenori ca mine." },
-          { name: "Oleg Smirnov", role: "Freelancer", quote: "Ca freelancer, mă îngrijoram de termenele TVA. Cu GeniusTax totul se face rapid și profesionist, iar eu mă pot concentra pe munca mea." }
+          { name: "Victor R.", role: "BV / Import", quote: "Am trecut de la ZZP la BV cu ajutorul GeniusTax. Dna Nadejda s-a ocupat de tot: notar, traduceri, coordonare. Ne-a ajutat și cu importul din non-UE — totul pregătit din timp, vămuirea a durat foarte puțin. Colaborare foarte profesionistă." },
+          { name: "Alexandra B.", role: "ZZP Foodtruck", quote: "Când am deschis foodtruck-ul, nu știam nimic despre NVWA, HACCP sau etichetare. După discuția cu dna Nadejda, am înțeles exact ce trebuie să fac pentru a funcționa legal. Informații clare și practice." },
+          { name: "Inna S.", role: "Domeniul Beauty", quote: "Nu știam că pot aplica pentru schema KOR. După consultația cu dna Nadejda, am înțeles că e potrivită pentru venitul meu. O discuție clară și utilă, care m-a ajutat să economisesc timp și bani." },
+          { name: "Ana C.", role: "ZZP", quote: "Când am deschis firma, nu înțelegeam ce am de făcut. Dna Nadejda mi-a explicat totul pas cu pas și mi-a dat materiale scrise despre cheltuieli deductibile, asigurări și costuri auto. Foarte util, mai ales la început." },
+          { name: "Vasile Z.", role: "ZZP / Import", quote: "Contabilul anterior nu a tratat corect TVA-ul pentru importul din China. Dna Nadejda a verificat declarațiile și a corectat situația — TVA-ul a fost recuperat corect. Apreciem profesionalismul și cunoștințele solide." },
+          { name: "Catalina C.", role: "BV", quote: "După închiderea BV-ului, datele din Belastingdienst nu corespundeau cu KVK și am primit penalități. GeniusTax a clarificat situația, iar amenzile au fost anulate. Fără acest suport, ar fi fost foarte greu de rezolvat." }
         ]
       }
     },
