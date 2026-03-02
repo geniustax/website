@@ -103,7 +103,7 @@
                 <h3 class="u-align-center u-text u-text-1" data-i18n="contact.hero.title">Interested in our services?</h3>
                 <h4 class="u-align-center u-text u-text-2" data-i18n="contact.hero.subtitle">We respond within 24 hours!</h4>
                 <div class="u-expanded-width u-form u-form-1">
-                  <form id="contact-form" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 0;" name="form" action="/api/contact" method="POST" autocomplete="on">
+                  <form id="contact-form" class="u-clearfix u-form-spacing-15 u-form-vertical u-form-custom-backend u-inner-form" style="padding: 0;" name="form" action="/api/contact" method="POST" autocomplete="on">
                     <div style="position:absolute;left:-5000px;opacity:0;pointer-events:none" aria-hidden="true">
                       <label for="company-field">Company</label>
                       <input type="text" id="company-field" name="company" tabindex="-1" autocomplete="off">
@@ -141,7 +141,7 @@
                       </label>
                     </div>
                     <div class="u-align-left u-form-group u-form-submit">
-                      <button type="submit" class="u-active-custom-color-3 u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-palette-1-base u-btn u-btn-submit u-button-style u-custom-color-3 u-hover-color-var u-text-active-white u-text-hover-white u-btn-1" data-i18n="contact.form.submit">Send request</button>
+                      <button type="submit" class="u-active-custom-color-3 u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-palette-1-base u-btn u-button-style u-custom-color-3 u-hover-color-var u-text-active-white u-text-hover-white u-btn-1" data-i18n="contact.form.submit">Send request</button>
                     </div>
                     <div id="form-success" class="u-form-send-message u-form-send-success" style="display: none;" data-i18n="contact.form.success">Thanks! Your message has been sent.</div>
                     <div id="form-error" class="u-form-send-error u-form-send-message" style="display: none;" data-i18n="contact.form.error">Sending failed. Please try again.</div>
@@ -216,74 +216,7 @@
     <div class="whatsapp-text" data-i18n="contact.whatsapp.text">Message us</div>
   </a>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const urlParams = new URLSearchParams(window.location.search);
-      const serviceParam = urlParams.get('service');
-      const serviceSelect = document.getElementById('service-selection');
-      if (serviceParam && serviceSelect) {
-        const option = serviceSelect.querySelector(`option[value="${serviceParam}"]`);
-        if (option) serviceSelect.value = serviceParam;
-      }
-
-      const form = document.getElementById('contact-form');
-      const successMsg = document.getElementById('form-success');
-      const errorMsg = document.getElementById('form-error');
-      const sendingMsg = document.getElementById('form-sending');
-      const submitBtn = form.querySelector('button[type="submit"]');
-
-      form.addEventListener('submit', async function(e) {
-        e.preventDefault();
-
-        successMsg.style.display = 'none';
-        errorMsg.style.display = 'none';
-        sendingMsg.style.display = 'block';
-        if (submitBtn) submitBtn.disabled = true;
-
-        const serviceValue = form.service.value;
-          const lang = (localStorage && localStorage.getItem('lang')) || 'en';
-          const t = (window.I18N && window.I18N[lang]) ? window.I18N[lang] : window.I18N.en;
-          const serviceNames = {
-            basic: (t.contact && t.contact.form && t.contact.form.options.basic) || 'Basic package',
-            standard: (t.contact && t.contact.form && t.contact.form.options.standard) || 'Standard package',
-            premium: (t.contact && t.contact.form && t.contact.form.options.premium) || 'Premium package',
-            individual: (t.contact && t.contact.form && t.contact.form.options.individual) || 'Individual services'
-          };
-
-          const payload = {
-            name: form.name.value,
-            email: form.email.value,
-            phone: form.phone.value,
-            service: serviceValue ? serviceNames[serviceValue] : ((t.contact && t.contact.form && t.contact.form.options.select) || 'Not selected'),
-            message: form.message.value,
-            company: form.company ? form.company.value : ''
-          };
-
-        try {
-          const resp = await fetch('/api/contact', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(payload)
-          });
-
-          const data = await resp.json().catch(() => ({}));
-          sendingMsg.style.display = 'none';
-          if (resp.ok && data.ok) {
-            successMsg.style.display = 'block';
-            form.reset();
-            if (serviceParam && serviceSelect) serviceSelect.value = serviceParam;
-          } else {
-            errorMsg.style.display = 'block';
-          }
-        } catch (err) {
-          sendingMsg.style.display = 'none';
-          errorMsg.style.display = 'block';
-        } finally {
-          if (submitBtn) submitBtn.disabled = false;
-        }
-      });
-    });
-  </script>
+  <script defer src="assets/contact-form-handler.js"></script>
 
 <div data-footer></div>
 </body></html>
